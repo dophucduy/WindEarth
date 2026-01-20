@@ -1,3 +1,23 @@
+⚡ Lưu ý quan trọng
+Không commit thư mục Library/ vì nó chứa cache, có thể tái tạo.
+
+Luôn commit file .meta để tránh mất liên kết asset.
+
+Sử dụng Git LFS (Large File Storage) cho file lớn (texture, audio, video).
+
+bash
+git lfs install
+git lfs track "*.psd" "*.mp4" "*.wav"
+📊 Quy trình chuẩn cho teamwork
+Pull trước khi làm việc để cập nhật code mới nhất.
+
+Commit nhỏ, có ý nghĩa (ví dụ: "Add player movement script").
+
+Code review qua Pull Request để tránh lỗi.
+
+Resolve conflict bằng cách merge thủ công trong Git hoặc Unity.
+____________
+
 Dưới đây là quy trình dựng game Unity 2D co-op online (2 người chơi / 2 máy khác nhau) kiểu Fireboy & Watergirl nhưng là Wind & Earth, chia việc để 5 thành viên ai cũng vừa thiết kế vừa viết C#.
 
 0) Chọn stack kỹ thuật (để chơi khác máy, không local co-op)
