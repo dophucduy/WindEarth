@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 234.4
     height: 636.8
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -246,15 +246,15 @@ MonoBehaviour:
     y: 636.8
     width: 1508.8
     height: 368.00006
-  m_MinSize: {x: 101, y: 126}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 231, y: 276}
+  m_MaxSize: {x: 10001, y: 10026}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 14}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -274,8 +274,8 @@ MonoBehaviour:
     y: 0
     width: 539.19995
     height: 1004.80005
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -699,18 +699,26 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: []
+      m_SelectedIDs:
+      - m_Data: 53674
       m_LastClickedID:
-        m_Data: 0
+        m_Data: 53674
       m_ExpandedIDs:
-      - m_Data: -4138
-      - m_Data: -3866
-      - m_Data: -3676
-      - m_Data: -3286
-      - m_Data: -3064
+      - m_Data: -23836
+      - m_Data: -23626
+      - m_Data: -23306
+      - m_Data: -23062
+      - m_Data: -22518
+      - m_Data: -8768
+      - m_Data: -8424
+      - m_Data: -8118
       - m_Data: -1312
-      - m_Data: 50758
-      - m_Data: 50768
+      - m_Data: 50720
+      - m_Data: 50808
+      - m_Data: 52542
+      - m_Data: 52630
+      - m_Data: 53570
+      - m_Data: 53674
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -728,7 +736,7 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 10}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1359,9 +1367,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 991.0409, y: 573.7859, z: -5.1118674}
+    m_Target: {x: 936.92664, y: 514.7304, z: -4.842328}
     speed: 2
-    m_Value: {x: 931.8055, y: 583.0117, z: -5.401311}
+    m_Value: {x: 936.92664, y: 514.7304, z: -4.842328}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1411,9 +1419,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 614.2678
+    m_Target: 494.23306
     speed: 2
-    m_Value: 643.2124
+    m_Value: 494.23306
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1545,7 +1553,7 @@ MonoBehaviour:
       height: 864
     m_MinimalGUI: 1
   m_defaultScale: 0.6826389
-  m_LastWindowPixelSize: {x: 1272.4, y: 610.8}
+  m_LastWindowPixelSize: {x: 1590.5, y: 763.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1601,7 +1609,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Packages/com.unity.visualscripting/Runtime/VisualScripting.Core/Platforms
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1611,33 +1619,35 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
-  - Assets/Scenes
+  - Packages/com.unity.visualscripting/Runtime/VisualScripting.Core/Platforms
   m_LastFoldersGridSize: 46
   m_LastProjectPath: D:\FPTU\SemesterVII\PRU\WindEarth
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 893.99994}
     m_SelectedIDs:
-    - m_Data: 51102
+    - m_Data: 54228
     m_LastClickedID:
-      m_Data: 51102
+      m_Data: 54228
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51100
-    - m_Data: 51102
-    - m_Data: 51104
-    - m_Data: 51106
-    - m_Data: 51334
-    - m_Data: 51346
+    - m_Data: 51110
+    - m_Data: 51112
+    - m_Data: 51114
+    - m_Data: 51116
+    - m_Data: 51270
+    - m_Data: 51280
     - m_Data: 51348
+    - m_Data: 54230
+    - m_Data: 54232
     - m_Data: 1000000000
     - m_Data: 2147483647
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Art
-      m_OriginalName: Art
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
@@ -1645,10 +1655,10 @@ MonoBehaviour:
         width: 0
         height: 0
       m_UserData:
-        m_Data: 51254
+        m_Data: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 10}
@@ -1666,10 +1676,10 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51100
-    - m_Data: 51102
-    - m_Data: 51104
-    - m_Data: 51106
+    - m_Data: 51110
+    - m_Data: 51112
+    - m_Data: 51114
+    - m_Data: 51116
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1697,8 +1707,8 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: -10100
-    m_LastClickedInstanceID: -10100
+    - m_Data: 53674
+    m_LastClickedInstanceID: 53674
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 70850
@@ -1814,7 +1824,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 588.8
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
