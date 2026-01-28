@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\assets\\scripts\\mainmenu\\levelbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|d:\\fptu\\semestervii\\pru\\windearth\\assets\\scripts\\mainmenu\\levelbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu\\levelbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|d:\\fptu\\semestervii\\pru\\windearth\\assets\\scripts\\mainmenu\\levelselectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\assets\\scripts\\mainmenu\\levelselectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu\\levelselectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -359,8 +359,7 @@
               "RelativeToolTip": "Assets\\Scripts\\MainMenu\\LevelSelectManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T15:23:40.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T15:23:40.663Z"
             },
             {
               "$type": "Document",
