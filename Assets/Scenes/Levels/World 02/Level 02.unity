@@ -21950,9 +21950,10 @@ GameObject:
   - component: {fileID: 1746928780}
   - component: {fileID: 1746928779}
   - component: {fileID: 1746928778}
+  - component: {fileID: 1746928782}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22050,6 +22051,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1746928782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746928777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6754038ade2a004b95221c22718f089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRespawn
 --- !u!1 &1862335753
 GameObject:
   m_ObjectHideFlags: 0
@@ -22061,6 +22074,7 @@ GameObject:
   - component: {fileID: 1862335756}
   - component: {fileID: 1862335755}
   - component: {fileID: 1862335754}
+  - component: {fileID: 1862335757}
   m_Layer: 0
   m_Name: Spike
   m_TagString: Untagged
@@ -22182,12 +22196,24 @@ Transform:
   m_GameObject: {fileID: 1862335753}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.8, y: -10.76, z: 0}
-  m_LocalScale: {x: 9.188721, y: 4.3997, z: 1}
+  m_LocalPosition: {x: 17.8, y: -11.5259, z: 0}
+  m_LocalScale: {x: 9.188721, y: 2.8681645, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1862335757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862335753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b54d0415e3b8244b14bf506ad8b92e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &2119338542
 GameObject:
   m_ObjectHideFlags: 0
@@ -22200,9 +22226,10 @@ GameObject:
   - component: {fileID: 2119338545}
   - component: {fileID: 2119338544}
   - component: {fileID: 2119338543}
+  - component: {fileID: 2119338547}
   m_Layer: 0
   m_Name: Player1
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22300,6 +22327,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2119338547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119338542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6754038ade2a004b95221c22718f089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
