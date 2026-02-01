@@ -1,26 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\",
+  "WorkspaceRootPath": "D:\\SourceCode\\PRU\\WindEarth\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|d:\\fptu\\semestervii\\pru\\windearth\\assets\\scripts\\mainmenu\\levelbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|d:\\sourcecode\\pru\\windearth\\assets\\scripts\\netcode\\networkbootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\netcode\\networkbootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SourceCode\\PRU\\WindEarth\\Library\\PackageCache\\com.unity.netcode.gameobjects@0ad4bf5f3728\\Runtime\\Core\\NetworkManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.netcode.gameobjects@0ad4bf5f3728\\Runtime\\Core\\NetworkManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\SourceCode\\PRU\\WindEarth\\assets\\scripts\\netcode\\networkplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\netcode\\networkplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|d:\\sourcecode\\pru\\windearth\\assets\\scripts\\netcode\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\netcode\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|d:\\sourcecode\\pru\\windearth\\assets\\scripts\\netcode\\playerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\netcode\\playerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\SourceCode\\PRU\\WindEarth\\assets\\scripts\\login\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\login\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\SourceCode\\PRU\\WindEarth\\assets\\scripts\\login\\authuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\login\\authuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\SourceCode\\PRU\\WindEarth\\assets\\scripts\\login\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\login\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\SourceCode\\PRU\\WindEarth\\assets\\scripts\\earth\\anchorable2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\earth\\anchorable2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\SourceCode\\PRU\\WindEarth\\assets\\scripts\\mainmenu\\levelbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu\\levelbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\assets\\scripts\\mainmenu\\levelselectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\SourceCode\\PRU\\WindEarth\\assets\\scripts\\mainmenu\\levelselectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu\\levelselectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\assets\\scripts\\mainmenu\\backtomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\SourceCode\\PRU\\WindEarth\\assets\\scripts\\mainmenu\\backtomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu\\backtomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\assets\\scripts\\mainmenu\\mainmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|D:\\SourceCode\\PRU\\WindEarth\\assets\\scripts\\mainmenu\\mainmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu\\mainmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\Library\\PackageCache\\com.unity.collab-proxy@3351acaba9c9\\Editor\\FindWorkspace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.collab-proxy@3351acaba9c9\\Editor\\FindWorkspace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\Library\\PackageCache\\com.unity.collab-proxy@3351acaba9c9\\Editor\\FindWorkspace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,307 +65,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 74,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:16:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1377497384:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:15:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:16:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:17:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:14:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:13:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:12:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:11:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:10:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:9:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:8:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:7:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:6:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:5:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:4:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:3:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:7:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:17:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:11:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:12:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{588470cc-84f8-4a57-9ac4-86bca0625ff4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1928210406:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:350743133:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:5:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:6:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:27:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:29:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:41:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:41:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:42:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f53-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:43:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:44:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:44:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:43:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:45:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:48:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NetworkManager.cs",
+              "DocumentMoniker": "D:\\SourceCode\\PRU\\WindEarth\\Library\\PackageCache\\com.unity.netcode.gameobjects@0ad4bf5f3728\\Runtime\\Core\\NetworkManager.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.netcode.gameobjects@0ad4bf5f3728\\Runtime\\Core\\NetworkManager.cs",
+              "ToolTip": "D:\\SourceCode\\PRU\\WindEarth\\Library\\PackageCache\\com.unity.netcode.gameobjects@0ad4bf5f3728\\Runtime\\Core\\NetworkManager.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.netcode.gameobjects@0ad4bf5f3728\\Runtime\\Core\\NetworkManager.cs",
+              "ViewState": "AgIAAHoFAAAAAAAAAAAvwJAFAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T15:57:24.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SessionManager.cs",
+              "DocumentMoniker": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Netcode\\SessionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Netcode\\SessionManager.cs",
+              "ToolTip": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Netcode\\SessionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Netcode\\SessionManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T14:14:17.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerRole.cs",
+              "DocumentMoniker": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Netcode\\PlayerRole.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Netcode\\PlayerRole.cs",
+              "ToolTip": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Netcode\\PlayerRole.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Netcode\\PlayerRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T14:13:36.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NetworkBootstrap.cs",
+              "DocumentMoniker": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Netcode\\NetworkBootstrap.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Netcode\\NetworkBootstrap.cs",
+              "ToolTip": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Netcode\\NetworkBootstrap.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Netcode\\NetworkBootstrap.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswBkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T14:03:12.137Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "NetworkPlayerController.cs",
+              "DocumentMoniker": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Netcode\\NetworkPlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Netcode\\NetworkPlayerController.cs",
+              "ToolTip": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Netcode\\NetworkPlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Netcode\\NetworkPlayerController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T13:58:08.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Login\\RegisterController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Login\\RegisterController.cs",
+              "ToolTip": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Login\\RegisterController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Login\\RegisterController.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAwwHoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T09:04:03.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Login\\LoginController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Login\\LoginController.cs",
+              "ToolTip": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Login\\LoginController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Login\\LoginController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T07:24:35.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthUIManager.cs",
+              "DocumentMoniker": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Login\\AuthUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Login\\AuthUIManager.cs",
+              "ToolTip": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Login\\AuthUIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Login\\AuthUIManager.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T07:08:45.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Anchorable2D.cs",
+              "DocumentMoniker": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Earth\\Anchorable2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Earth\\Anchorable2D.cs",
+              "ToolTip": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\Earth\\Anchorable2D.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Earth\\Anchorable2D.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T05:47:59.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "BackToMenu.cs",
-              "DocumentMoniker": "D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\BackToMenu.cs",
+              "DocumentMoniker": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\BackToMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\BackToMenu.cs",
-              "ToolTip": "D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\BackToMenu.cs",
+              "ToolTip": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\BackToMenu.cs",
               "RelativeToolTip": "Assets\\Scripts\\MainMenu\\BackToMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -338,24 +194,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "LevelBtn.cs",
-              "DocumentMoniker": "D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\LevelBtn.cs",
+              "DocumentMoniker": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\LevelBtn.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\LevelBtn.cs",
-              "ToolTip": "D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\LevelBtn.cs",
+              "ToolTip": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\LevelBtn.cs",
               "RelativeToolTip": "Assets\\Scripts\\MainMenu\\LevelBtn.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T15:28:44.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T15:28:44.726Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "LevelSelectManager.cs",
-              "DocumentMoniker": "D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\LevelSelectManager.cs",
+              "DocumentMoniker": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\LevelSelectManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\LevelSelectManager.cs",
-              "ToolTip": "D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\LevelSelectManager.cs",
+              "ToolTip": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\LevelSelectManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\MainMenu\\LevelSelectManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -363,11 +218,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "MainMenuController.cs",
-              "DocumentMoniker": "D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\MainMenuController.cs",
+              "DocumentMoniker": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\MainMenuController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\MainMenuController.cs",
-              "ToolTip": "D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\MainMenuController.cs",
+              "ToolTip": "D:\\SourceCode\\PRU\\WindEarth\\Assets\\Scripts\\MainMenu\\MainMenuController.cs",
               "RelativeToolTip": "Assets\\Scripts\\MainMenu\\MainMenuController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -375,103 +230,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "FindWorkspace.cs",
               "DocumentMoniker": "D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\Library\\PackageCache\\com.unity.collab-proxy@3351acaba9c9\\Editor\\FindWorkspace.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.collab-proxy@3351acaba9c9\\Editor\\FindWorkspace.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\FPTU\\SemesterVII\\PRU\\WindEarth\\Library\\PackageCache\\com.unity.collab-proxy@3351acaba9c9\\Editor\\FindWorkspace.cs",
               "ToolTip": "D:\\FPTU\\SemesterVII\\PRU\\WindEarth\\Library\\PackageCache\\com.unity.collab-proxy@3351acaba9c9\\Editor\\FindWorkspace.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.collab-proxy@3351acaba9c9\\Editor\\FindWorkspace.cs",
+              "RelativeToolTip": "..\\..\\..\\FPTU\\SemesterVII\\PRU\\WindEarth\\Library\\PackageCache\\com.unity.collab-proxy@3351acaba9c9\\Editor\\FindWorkspace.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-26T09:16:41.301Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 75,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 392,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:12:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:13:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:10:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:26:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:32:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:33:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:35:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:36:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:38:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:39:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:40:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:42:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:15:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:8:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:9:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:28:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:13:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:31:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             }
           ]
         }
