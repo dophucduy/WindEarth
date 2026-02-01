@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2048
     height: 1060.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -704,21 +704,24 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -7408
+      - m_Data: -10704
+      - m_Data: -10210
+      - m_Data: -9930
+      - m_Data: -5786
       - m_Data: -1312
-      - m_Data: 50736
-      - m_Data: 50762
-      - m_Data: 50772
-      - m_Data: 50782
-      - m_Data: 50812
-      - m_Data: 53472
-      - m_Data: 53498
-      - m_Data: 53510
-      - m_Data: 53540
-      - m_Data: 53568
-      - m_Data: 53580
-      - m_Data: 53608
-      - m_Data: 53620
+      - m_Data: 50738
+      - m_Data: 50846
+      - m_Data: 52592
+      - m_Data: 52618
+      - m_Data: 52628
+      - m_Data: 52638
+      - m_Data: 52668
+      - m_Data: 53080
+      - m_Data: 53196
+      - m_Data: 53326
+      - m_Data: 53336
+      - m_Data: 53530
+      - m_Data: 53646
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1367,9 +1370,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 716.6304, y: 545.6217, z: -6.585545}
+    m_Target: {x: 581.8648, y: 480.27045, z: -4.4179754}
     speed: 2
-    m_Value: {x: 716.6304, y: 545.6217, z: -6.585545}
+    m_Value: {x: 581.8648, y: 480.27045, z: -4.4179754}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1419,9 +1422,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 739.9487
+    m_Target: 523.1922
     speed: 2
-    m_Value: 739.9487
+    m_Value: 523.1922
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1609,7 +1612,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Packages/com.unity.timeline/Editor/Window/Modes
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1619,26 +1622,20 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
-  - Packages/com.unity.timeline/Editor/Window/Modes
+  - Assets
   m_LastFoldersGridSize: 46
   m_LastProjectPath: D:\FPTU\SemesterVII\PRU\WindEarth
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1262}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 54560
+    - m_Data: 51176
     m_LastClickedID:
-      m_Data: 54560
+      m_Data: 51176
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51176
-    - m_Data: 51178
-    - m_Data: 51180
-    - m_Data: 51182
-    - m_Data: 51184
-    - m_Data: 51186
     - m_Data: 51188
     - m_Data: 51190
     - m_Data: 51192
@@ -1649,6 +1646,10 @@ MonoBehaviour:
     - m_Data: 51202
     - m_Data: 51204
     - m_Data: 51206
+    - m_Data: 51208
+    - m_Data: 51210
+    - m_Data: 51212
+    - m_Data: 51214
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1681,12 +1682,6 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51176
-    - m_Data: 51178
-    - m_Data: 51180
-    - m_Data: 51182
-    - m_Data: 51184
-    - m_Data: 51186
     - m_Data: 51188
     - m_Data: 51190
     - m_Data: 51192
@@ -1697,6 +1692,10 @@ MonoBehaviour:
     - m_Data: 51202
     - m_Data: 51204
     - m_Data: 51206
+    - m_Data: 51208
+    - m_Data: 51210
+    - m_Data: 51212
+    - m_Data: 51214
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1724,9 +1723,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: 48562
-    m_LastClickedInstanceID: 48562
-    m_HadKeyboardFocusLastEvent: 1
+    - m_Data: 51388
+    m_LastClickedInstanceID: 51388
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs:
     - m_Data: 70850
     m_RenameOverlay:
