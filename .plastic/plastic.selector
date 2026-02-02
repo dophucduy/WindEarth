@@ -1,4 +1,0 @@
-repository "WindEarth/WindEarthCoop@18967998327845@cloud"
-  path "/"
-    br "/main"
-    co "/main"
