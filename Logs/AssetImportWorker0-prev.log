@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.3f1 (ef04196de0d6) revision 15664153'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26100) 64bit ProfessionalEducation' Language: 'en' Physical Memory: 16011 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin" at "2026-01-31T14:12:38.9101529Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-01-31T14:12:38Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin" at "2026-01-31T14:20:54.8559257Z"
+Date: 2026-01-31T14:20:54Z
 
 COMMAND LINE ARGUMENTS:
 C:\unity\6000.3.3f1\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:/uni/pru213/proj/WindEarth
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59447
+63118
 -licensingIpc
 LicenseClient-Admin
 -job-worker-count
@@ -65,12 +65,12 @@ C:/uni/pru213/proj/WindEarth
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [1924]  Target information:
+Player connection [3804]  Target information:
 
-Player connection [1924]  * "[IP] 192.168.1.101 [Port] 0 [Flags] 2 [Guid] 4027516623 [EditorId] 4027516623 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-JUBLI2B6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [3804]  * "[IP] 192.168.1.101 [Port] 0 [Flags] 2 [Guid] 2069746967 [EditorId] 2069746967 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-JUBLI2B6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [1924] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [1924] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [3804] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [3804] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -82,7 +82,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 4.16 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.86 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.3f1 (ef04196de0d6)
 [Subsystems] Discovering subsystems at path C:/unity/6000.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -98,51 +98,51 @@ Initialize mono
 Mono path[0] = 'C:/unity/6000.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/unity/6000.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/unity/6000.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56668
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56304
 Begin MonoManager ReloadAssembly
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              e73e230f2c3341dab2dfbe59173d1e67
-  Correlation Id:          34f532793cfc3e880203a57e8d4dd4e3
-  External correlation Id: 1190218048412900343
-  Machine Id:              EGS9zNEGHZNMS8QsP40rZt+s9Fs=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Admin" (connect: 0.00s, validation: 0.00s, handshake: 0.85s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin-notifications" at "2026-01-31T14:12:39.7622259Z"
-[Licensing::Module] Licensing Background thread has ended after 0.85s
 Registering precompiled unity dll's ...
 Register platform support module: C:/unity/6000.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002020 seconds.
-- Loaded All Assemblies, in  0.383 seconds
+Registered in 0.002508 seconds.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              9b308fde34634c17b027f12f6f5abd43
+  Correlation Id:          34f532793cfc3e880203a57e8d4dd4e3
+  External correlation Id: 5144036542091433987
+  Machine Id:              EGS9zNEGHZNMS8QsP40rZt+s9Fs=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Admin" (connect: 0.00s, validation: 0.00s, handshake: 0.89s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin-notifications" at "2026-01-31T14:20:55.7527557Z"
+[Licensing::Module] Licensing Background thread has ended after 0.90s
+- Loaded All Assemblies, in  0.428 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.381 seconds
-Domain Reload Profiling: 760ms
-	BeginReloadAssembly (129ms)
+- Finished resetting the current domain, in  0.411 seconds
+Domain Reload Profiling: 835ms
+	BeginReloadAssembly (140ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (155ms)
-		LoadAssemblies (125ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (170ms)
+		LoadAssemblies (135ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (153ms)
-			TypeCache.Refresh (151ms)
-				TypeCache.ScanAssembly (138ms)
+		AnalyzeDomain (167ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (152ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (381ms)
+	FinalizeReload (411ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (349ms)
+		SetupLoadedEditorAssemblies (366ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (48ms)
+			InitializePlatformSupportModulesInManaged (49ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (149ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (156ms)
 			ProcessInitializeOnLoadMethodAttributes (67ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -158,76 +158,780 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  0.776 seconds
-Refreshing native plugins compatible for Editor in 3.67 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.865 seconds
+Refreshing native plugins compatible for Editor in 1.50 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.835 seconds
-Domain Reload Profiling: 2604ms
-	BeginReloadAssembly (158ms)
+- Finished resetting the current domain, in  0.885 seconds
+Domain Reload Profiling: 1741ms
+	BeginReloadAssembly (180ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (532ms)
-		LoadAssemblies (383ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (578ms)
+		LoadAssemblies (403ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (237ms)
-			TypeCache.Refresh (174ms)
-				TypeCache.ScanAssembly (159ms)
-			BuildScriptInfoCaches (50ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1836ms)
+		AnalyzeDomain (275ms)
+			TypeCache.Refresh (200ms)
+				TypeCache.ScanAssembly (184ms)
+			BuildScriptInfoCaches (58ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (885ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1573ms)
+		SetupLoadedEditorAssemblies (738ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (319ms)
-			ProcessInitializeOnLoadAttributes (955ms)
-			ProcessInitializeOnLoadMethodAttributes (266ms)
-			AfterProcessingInitializeOnLoad (22ms)
-			EditorAssembliesLoaded (1ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (176ms)
+			ProcessInitializeOnLoadAttributes (440ms)
+			ProcessInitializeOnLoadMethodAttributes (110ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 4.84 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.53 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7372 unused Assets / (3.8 MB). Loaded Objects now: 8201.
-Memory consumption went from 155.5 MB to 151.7 MB.
-Total: 16.119200 ms (FindLiveObjects: 1.358200 ms CreateObjectMapping: 0.990700 ms MarkObjects: 9.841800 ms  DeleteObjects: 3.927300 ms)
+Unloading 7372 unused Assets / (4.7 MB). Loaded Objects now: 8201.
+Memory consumption went from 157.5 MB to 152.7 MB.
+Total: 9.412200 ms (FindLiveObjects: 1.417400 ms CreateObjectMapping: 0.601200 ms MarkObjects: 5.366300 ms  DeleteObjects: 2.026500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 23372.959007 seconds.
-  path: Assets/Scenes/Levels/Level_01.unity
-  artifactKey: Guid(7c462238ab5d21449a8fe734c67d5b7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Levels/Level_01.unity using Guid(7c462238ab5d21449a8fe734c67d5b7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8f7f5903abbcb5b22e23c51e6d7ca1b3') in 0.1354193 seconds
+  Time since last request: 23878.005267 seconds.
+  path: Assets/Scenes/GameLevels
+  artifactKey: Guid(7eeff9fbd0059cf48a85d45935396138) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels using Guid(7eeff9fbd0059cf48a85d45935396138) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1b1f47525596a696709cfcb87959a2a9') in 0.0404919 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.751069 seconds.
-  path: Assets/Scenes/Levels/Level_01.unity
-  artifactKey: Guid(7c462238ab5d21449a8fe734c67d5b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Levels/Level_01.unity using Guid(7c462238ab5d21449a8fe734c67d5b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8925c79caa36da221b8eeaaed0c24365') in 0.0014172 seconds
+  Time since last request: 104.631085 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Terrain/Terrain (16x16) 1.png
+  artifactKey: Guid(413986c4a668c374d8de72a47621b531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Terrain/Terrain (16x16) 1.png using Guid(413986c4a668c374d8de72a47621b531) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '203f7f754936924a93043c4766617c11') in 0.0727743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.739980 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Terrain/Terrain (16x16) 1.png
+  artifactKey: Guid(413986c4a668c374d8de72a47621b531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Terrain/Terrain (16x16) 1.png using Guid(413986c4a668c374d8de72a47621b531) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '44db47dc43ce6e597f0f5c6cb3e6d0c9') in 0.0092377 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.924469 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Terrain/Terrain (16x16) 1.png
+  artifactKey: Guid(413986c4a668c374d8de72a47621b531) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pixel Adventure 1/Assets/Terrain/Terrain (16x16) 1.png using Guid(413986c4a668c374d8de72a47621b531) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b1d928ec02a6ddc6e85c52aa66b1ad1f') in 0.0605492 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.830889 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Terrain/Terrain (16x16) 1.png
+  artifactKey: Guid(413986c4a668c374d8de72a47621b531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Terrain/Terrain (16x16) 1.png using Guid(413986c4a668c374d8de72a47621b531) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f426ed22053436723692d85061aa7ae') in 0.2938989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 146
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.552118 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Terrain/Terrain (16x16) 1.png
+  artifactKey: Guid(413986c4a668c374d8de72a47621b531) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pixel Adventure 1/Assets/Terrain/Terrain (16x16) 1.png using Guid(413986c4a668c374d8de72a47621b531) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e832648ce9d8ac65d28364a35fe521cf') in 0.0935362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 146
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.216307 seconds.
+  path: Assets/Scenes/GameLevels
+  artifactKey: Guid(7eeff9fbd0059cf48a85d45935396138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GameLevels using Guid(7eeff9fbd0059cf48a85d45935396138) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2214e48c7d2b154434d40819d7407131') in 0.0006878 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.446852 seconds.
-  path: Assets/Scenes/Levels/Level_02.unity
-  artifactKey: Guid(fcde33881fbc500499385c6630d48f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Levels/Level_02.unity using Guid(fcde33881fbc500499385c6630d48f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3015878ca999c8fa7361642c129c804') in 0.0006568 seconds
+  Time since last request: 7.180813 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps
+  artifactKey: Guid(ef7fde38dd573b34a8c328fccaef308f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GameLevels/Tilemaps using Guid(ef7fde38dd573b34a8c328fccaef308f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4a6e84c3697a995d503cf6cca3fb25d') in 0.000945 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.975321 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps
+  artifactKey: Guid(ef7fde38dd573b34a8c328fccaef308f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps using Guid(ef7fde38dd573b34a8c328fccaef308f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd56b899acb1f0e9a1575a0a1eeaa2f6a') in 0.013743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.362611 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Palette.prefab
+  artifactKey: Guid(45bf81f2a3b15f04fb6f921cb9a0fc10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Palette.prefab using Guid(45bf81f2a3b15f04fb6f921cb9a0fc10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd87da47543908dd8a3dc452b8b55c684') in 0.0270241 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.802680 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_109.asset
+  artifactKey: Guid(37aa49757eaf0d74f87236678fed29ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_109.asset using Guid(37aa49757eaf0d74f87236678fed29ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '46574d4619dd62c8904e5d8cdcca9433') in 0.0160745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_110.asset
+  artifactKey: Guid(d7fc9907045e28a4b98286b25e61a6ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_110.asset using Guid(d7fc9907045e28a4b98286b25e61a6ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c4a8bd3168921c77f49f45cf58094368') in 0.0056286 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_105.asset
+  artifactKey: Guid(db423505fc1301c40b2b5fcf3873d72d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_105.asset using Guid(db423505fc1301c40b2b5fcf3873d72d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '55792fcabc066d75ae296948127a9d30') in 0.0047018 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_77.asset
+  artifactKey: Guid(db9aeeaf64fec5e4da9e182ce9b2f656) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_77.asset using Guid(db9aeeaf64fec5e4da9e182ce9b2f656) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5c418abf581c26ae2af2f2a8579c88c2') in 0.0059696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_13.asset
+  artifactKey: Guid(632dcb65cee3bc34ab94e99c9d3829b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_13.asset using Guid(632dcb65cee3bc34ab94e99c9d3829b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f2e925e338be0a147de0943f91914119') in 0.0066344 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_70.asset
+  artifactKey: Guid(185a86800f52e0749893fd37291d9bcc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_70.asset using Guid(185a86800f52e0749893fd37291d9bcc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0663e124038dd4933e02bc21272fb8ad') in 0.007953 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_71.asset
+  artifactKey: Guid(502262dbe58445045b0759b897bf30d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_71.asset using Guid(502262dbe58445045b0759b897bf30d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ce97dcc02ee9259970ea41375c6c017') in 0.0097103 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_133.asset
+  artifactKey: Guid(e05d15e62bb3f744eb66858124f4b495) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_133.asset using Guid(e05d15e62bb3f744eb66858124f4b495) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '95da659df821de3566f6a0d7e7042aec') in 0.0058501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_33.asset
+  artifactKey: Guid(cfa83b8b91b8e6c4f8ca767a05297283) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_33.asset using Guid(cfa83b8b91b8e6c4f8ca767a05297283) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e17d1d82eecef3ee0ecb8b6338b367c0') in 0.007208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_15.asset
+  artifactKey: Guid(a725de1906ac4c2459acab15531fb82e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_15.asset using Guid(a725de1906ac4c2459acab15531fb82e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '249d675da83ab637f3d0143d4ddd6c8f') in 0.0074044 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_142.asset
+  artifactKey: Guid(2e27964592a4ac1499ad0e623dd55f06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_142.asset using Guid(2e27964592a4ac1499ad0e623dd55f06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4050d5aeea381556ba1839f59f09bf21') in 0.0061287 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_25.asset
+  artifactKey: Guid(48a46396ec3bad9489ee135a4fd99076) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_25.asset using Guid(48a46396ec3bad9489ee135a4fd99076) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '16d5923fdfcbbfb2c59bd3730136a89c') in 0.0064087 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_51.asset
+  artifactKey: Guid(e0cd6f51d26d15547a81c00c90ed5315) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_51.asset using Guid(e0cd6f51d26d15547a81c00c90ed5315) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eee23f38ffe3a66ef537b208054ac7e1') in 0.0056443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_91.asset
+  artifactKey: Guid(caffc6f584e5c094494734d8019b6bc1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_91.asset using Guid(caffc6f584e5c094494734d8019b6bc1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '606984367da57eb4ff564a77c7cc9fc6') in 0.0072024 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_78.asset
+  artifactKey: Guid(011d3171bc5b7994fbd58af0111f6513) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_78.asset using Guid(011d3171bc5b7994fbd58af0111f6513) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e0b34f8000e491f2f4236df9ad5374c1') in 0.006695 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_102.asset
+  artifactKey: Guid(b7d0b9680cff4d14cb8cf6ac48c6735d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_102.asset using Guid(b7d0b9680cff4d14cb8cf6ac48c6735d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '512fdf538669c0e3bca3d9029886fe3f') in 0.0058275 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_117.asset
+  artifactKey: Guid(f578cbca3724232459f0749e24e37436) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_117.asset using Guid(f578cbca3724232459f0749e24e37436) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8931c26acf8793342aee17b26e73acff') in 0.0095746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_135.asset
+  artifactKey: Guid(226f363eb395ac84a83607bf4642516c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_135.asset using Guid(226f363eb395ac84a83607bf4642516c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '34ca4004cbfa9187441513a0ded6168e') in 0.0084302 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_108.asset
+  artifactKey: Guid(51ee2ad26e1cc7e4cb5bd5ea0171057c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_108.asset using Guid(51ee2ad26e1cc7e4cb5bd5ea0171057c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3fde0b5b5163b3cc3f4a4a5e1a566ad5') in 0.0058893 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_62.asset
+  artifactKey: Guid(dac7cb25df409eb41bd8b5fae92daee2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_62.asset using Guid(dac7cb25df409eb41bd8b5fae92daee2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '618a99b4712be879fdea89c6144b530f') in 0.0063555 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_30.asset
+  artifactKey: Guid(4bd4f49e250dec5439ed1961770f5128) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_30.asset using Guid(4bd4f49e250dec5439ed1961770f5128) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c01a266faa5ae0e51ac51441b716d766') in 0.0066103 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_46.asset
+  artifactKey: Guid(190fb83698ff89b4ab58d1daaa791da6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_46.asset using Guid(190fb83698ff89b4ab58d1daaa791da6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f1e8b163cdfe63755ac77a9f37b6aaeb') in 0.0055049 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_136.asset
+  artifactKey: Guid(72cba51fa78a939468c70730b270baab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_136.asset using Guid(72cba51fa78a939468c70730b270baab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd8129c9ca395590bf6a9858d55071a35') in 0.0067699 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_75.asset
+  artifactKey: Guid(7533e1b7be28efc44bc0ab100419eceb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_75.asset using Guid(7533e1b7be28efc44bc0ab100419eceb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b10a0e09515acb11827a124b8a8c0985') in 0.0073266 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_124.asset
+  artifactKey: Guid(dda6eb00697e207418716c29a82b39e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_124.asset using Guid(dda6eb00697e207418716c29a82b39e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '96411f91d2977d0ffc8daa438ffae82c') in 0.0070277 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_119.asset
+  artifactKey: Guid(ffeaa14475cdcbe4da7cbc072ba56a6d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_119.asset using Guid(ffeaa14475cdcbe4da7cbc072ba56a6d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4a2f3eb3e7e9716648d058002e65f68a') in 0.0062468 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_111.asset
+  artifactKey: Guid(2db67dc5922197448b74a85a5624af8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_111.asset using Guid(2db67dc5922197448b74a85a5624af8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4bdd615f71d435b0b4bb84da647a532a') in 0.0067032 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_8.asset
+  artifactKey: Guid(73fbd1b0f101cd54facb9108bb20a0d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_8.asset using Guid(73fbd1b0f101cd54facb9108bb20a0d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b65cb726f85e72fef4c730a558178e1c') in 0.0064155 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_45.asset
+  artifactKey: Guid(e5420700a3a7ef74284b47017737a757) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_45.asset using Guid(e5420700a3a7ef74284b47017737a757) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd712d681a5d1a241f8c5f990df30ce52') in 0.0055183 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_68.asset
+  artifactKey: Guid(61a8746b7b7d083478edbdd503590d00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_68.asset using Guid(61a8746b7b7d083478edbdd503590d00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1557db8cd0e1939955c149879522b06f') in 0.0059045 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_10.asset
+  artifactKey: Guid(56d0d95d538782a478414109f1ccdd82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_10.asset using Guid(56d0d95d538782a478414109f1ccdd82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4724ea3eacb31e9812e2e6612d9d4c45') in 0.0055773 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_59.asset
+  artifactKey: Guid(fb294ee313bb52d4e909a04fc270a4d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_59.asset using Guid(fb294ee313bb52d4e909a04fc270a4d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6571549469a84903bd86496cda6e1714') in 0.005615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_36.asset
+  artifactKey: Guid(af1e90086bd6e744fbcee4a24f57d84a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_36.asset using Guid(af1e90086bd6e744fbcee4a24f57d84a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '229f6e05f4e81dec5485e3208a00b0ef') in 0.0056209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_128.asset
+  artifactKey: Guid(cb4a4c1fff03543478de62f76c161efe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_128.asset using Guid(cb4a4c1fff03543478de62f76c161efe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e36178d30d5837389f0a97a54741326e') in 0.0064219 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_85.asset
+  artifactKey: Guid(c8c40ca3a01613d4abc7618d437a1bc7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_85.asset using Guid(c8c40ca3a01613d4abc7618d437a1bc7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '186b3ecd8e32c7ab1d0653cd47159f50') in 0.0063645 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_103.asset
+  artifactKey: Guid(1265926f4b6011d4e88aa4856defdaec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_103.asset using Guid(1265926f4b6011d4e88aa4856defdaec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5284ecea723d4ffd80da1cb2b15a5824') in 0.0059226 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_34.asset
+  artifactKey: Guid(cf07308616bc92747afb60dd7ee65b67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_34.asset using Guid(cf07308616bc92747afb60dd7ee65b67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bbaf2906d652eed0b7226a099695dbce') in 0.0048111 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_50.asset
+  artifactKey: Guid(656252ba9e1c63e48b4c25612d815a3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_50.asset using Guid(656252ba9e1c63e48b4c25612d815a3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd92808b018d310da297dd973caa9e216') in 0.0062592 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_137.asset
+  artifactKey: Guid(f0271ef9255724943abeefca4f4defdd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_137.asset using Guid(f0271ef9255724943abeefca4f4defdd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '540aed8bce301fae9909466710d14b38') in 0.0057944 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_42.asset
+  artifactKey: Guid(f1554840a774ddc42987c031c775c9e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_42.asset using Guid(f1554840a774ddc42987c031c775c9e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9fb5d3f93e8404887d5a64293bc1f94b') in 0.0055205 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_100.asset
+  artifactKey: Guid(ec5ec74391b44d148b429337aaa12910) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_100.asset using Guid(ec5ec74391b44d148b429337aaa12910) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6744c37867dc57a0f5449d23d91ced7c') in 0.0067279 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_22.asset
+  artifactKey: Guid(bed527d4017090a4d9fd837ab6720a9b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_22.asset using Guid(bed527d4017090a4d9fd837ab6720a9b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4b22dff94aefb5206c4c2c06727c2bfb') in 0.0067667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_69.asset
+  artifactKey: Guid(bf7545b6d2aec8044bbf4ffe45cc2125) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_69.asset using Guid(bf7545b6d2aec8044bbf4ffe45cc2125) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1b4ce4c2cbf22ad0ec0fd71ac812cdf1') in 0.0058644 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_17.asset
+  artifactKey: Guid(66a2979a79cc3b84e820eab5e9a6e80e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_17.asset using Guid(66a2979a79cc3b84e820eab5e9a6e80e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '071a761bf616fb64941c412658c64c48') in 0.0065109 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_28.asset
+  artifactKey: Guid(bffb7baf84eae89499c04dd2d53b5fe8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_28.asset using Guid(bffb7baf84eae89499c04dd2d53b5fe8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ffb2947541f3544b2dca73e243c8780d') in 0.0052241 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_95.asset
+  artifactKey: Guid(7cffc38c08bd62d4b996ea114e95b198) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_95.asset using Guid(7cffc38c08bd62d4b996ea114e95b198) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b6900f8d39aee679daf8f1aeefb47244') in 0.0050839 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_43.asset
+  artifactKey: Guid(42557bbf31f1b3843a692de41dffc572) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_43.asset using Guid(42557bbf31f1b3843a692de41dffc572) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f786d339bfc2674326de9226d1bb2db1') in 0.0060244 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_52.asset
+  artifactKey: Guid(416b12d525a099c499f2e0723d73347e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_52.asset using Guid(416b12d525a099c499f2e0723d73347e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '06c46e5eb945457424c91079f32b448d') in 0.0047336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_61.asset
+  artifactKey: Guid(339fa16c7dfa6bd469c8bc8dc37a9c6d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_61.asset using Guid(339fa16c7dfa6bd469c8bc8dc37a9c6d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5f69285580b3e53091a8c09bec866882') in 0.0058937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_9.asset
+  artifactKey: Guid(f67fef4718752444eb7d3924bb3175d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_9.asset using Guid(f67fef4718752444eb7d3924bb3175d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '87bf579fd72499aec205270da2cd9991') in 0.0049105 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_98.asset
+  artifactKey: Guid(01f133631ad1b1a4b928d8edd4c3f0dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_98.asset using Guid(01f133631ad1b1a4b928d8edd4c3f0dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd3619dfbc9b398fe7797b61802ad7788') in 0.0052288 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_125.asset
+  artifactKey: Guid(6c8df6ec088a09c48a324e54b442b416) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_125.asset using Guid(6c8df6ec088a09c48a324e54b442b416) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '74a0219cee7a7ba7011c98389b44b50d') in 0.0061604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_21.asset
+  artifactKey: Guid(43ddbba5c30a1be42baae0b07a06ea10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_21.asset using Guid(43ddbba5c30a1be42baae0b07a06ea10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '675adbb7696d2d210ab1d5d9299f0b68') in 0.0056056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_0.asset
+  artifactKey: Guid(8c3189780d2eeab4487b437b94ed6529) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_0.asset using Guid(8c3189780d2eeab4487b437b94ed6529) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '16163c9b42a425afe6279a4b58edee3b') in 0.0056118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_57.asset
+  artifactKey: Guid(be3b9de1f78a21b45af70695f6ba03fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_57.asset using Guid(be3b9de1f78a21b45af70695f6ba03fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '29bec0c8d814993cda952806a5edae58') in 0.0051711 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_18.asset
+  artifactKey: Guid(c7382db07745da44a96cd8e8264f79bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_18.asset using Guid(c7382db07745da44a96cd8e8264f79bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3a63e805dc52e403ff57eaf41c75343c') in 0.0051787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_44.asset
+  artifactKey: Guid(77171d33982703948b68cab00977d848) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_44.asset using Guid(77171d33982703948b68cab00977d848) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '724c3bc577573cd21dbca71d15e78be2') in 0.0074863 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_83.asset
+  artifactKey: Guid(dd4d8b5e577fb1d46b8e58783e2926f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_83.asset using Guid(dd4d8b5e577fb1d46b8e58783e2926f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1ae9c7ea99b05a0d415e154cf8de8d76') in 0.0051291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_104.asset
+  artifactKey: Guid(2c77adb8f9352ee4b8357ad9f4b4af26) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_104.asset using Guid(2c77adb8f9352ee4b8357ad9f4b4af26) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8844f43e11cee59526a53f4dfe692db7') in 0.0051246 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_54.asset
+  artifactKey: Guid(cbc597cfeb6f07f4a961f022dacb42fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_54.asset using Guid(cbc597cfeb6f07f4a961f022dacb42fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b3524249180757f2b453340e296553bd') in 0.0055057 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_118.asset
+  artifactKey: Guid(c086165885cfbb5498bdd8da0da6a52e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_118.asset using Guid(c086165885cfbb5498bdd8da0da6a52e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ada6d92bbacdc9188350f944e263b23') in 0.0052465 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_92.asset
+  artifactKey: Guid(fcead38c2817ea24389cf53255c72c35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_92.asset using Guid(fcead38c2817ea24389cf53255c72c35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9df09ee8d540b201e93dca5208773bb4') in 0.0052378 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_5.asset
+  artifactKey: Guid(0b98d6bc5b5254a41b912960a8d8555b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_5.asset using Guid(0b98d6bc5b5254a41b912960a8d8555b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5472dbcea6ee911f145ac4a10fc63707') in 0.0052483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_97.asset
+  artifactKey: Guid(3dc91b2bbe5802442a9cccc74d4bad60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_97.asset using Guid(3dc91b2bbe5802442a9cccc74d4bad60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6f83323cafe8746019355aaa0fa7556d') in 0.0049132 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_114.asset
+  artifactKey: Guid(9ccb06941fde7614b855455bebabbf82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_114.asset using Guid(9ccb06941fde7614b855455bebabbf82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '764737c829a87f8edfb0916965e25970') in 0.0053545 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_112.asset
+  artifactKey: Guid(3ae0830e7d9cef3439f56e2a9e8c85d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_112.asset using Guid(3ae0830e7d9cef3439f56e2a9e8c85d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0b97bc2c84314155d2ef526851d11d27') in 0.0048476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_35.asset
+  artifactKey: Guid(5d3499d7b42aeb84ea34b54572b01688) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_35.asset using Guid(5d3499d7b42aeb84ea34b54572b01688) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'edae45fae2f6fd3a6d4457bbbdc8c628') in 0.0054007 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_139.asset
+  artifactKey: Guid(e7afdcce9c36ece41baaa1501b5a625b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_139.asset using Guid(e7afdcce9c36ece41baaa1501b5a625b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cff8470b167812f1d611edc538383ea4') in 0.0055033 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_87.asset
+  artifactKey: Guid(ee7f61adf32968f43b44c958bf5d1bdf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_87.asset using Guid(ee7f61adf32968f43b44c958bf5d1bdf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd57ecd372a0bc6c342c445d843ca7957') in 0.0054398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_48.asset
+  artifactKey: Guid(666379e6f0d00224bb6727fce50636af) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_48.asset using Guid(666379e6f0d00224bb6727fce50636af) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '091aa315a1d915fa62f8cecd5f1757d0') in 0.0058029 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_126.asset
+  artifactKey: Guid(473646fd1be27934895e9c1083cc2a42) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_126.asset using Guid(473646fd1be27934895e9c1083cc2a42) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b7a6eb46f4c4ad8553e517de59e5bdda') in 0.0048354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_86.asset
+  artifactKey: Guid(2aff92440cfbc2a4aba394f39cc994d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_86.asset using Guid(2aff92440cfbc2a4aba394f39cc994d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5db6120aebfc590ea8c329b8bd910184') in 0.0056995 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_73.asset
+  artifactKey: Guid(531312254bde62e41b14d82c98b44b43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_73.asset using Guid(531312254bde62e41b14d82c98b44b43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cc46244b86d2e3a7072c11ea0cf09262') in 0.0053743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_80.asset
+  artifactKey: Guid(4d34192752eae0b44948986b9fd241f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Tilemaps/Terrain (16x16) 1_80.asset using Guid(4d34192752eae0b44948986b9fd241f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '836a485b5f6198d6b9256ad4e574b173') in 0.0059433 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 8914.446182 seconds.
+  path: Assets/Scenes/GameLevels/Level1.unity
+  artifactKey: Guid(a652632c76701c44d8c3477947ccdbb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Level1.unity using Guid(a652632c76701c44d8c3477947ccdbb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '349e28112f88dd211d86e2bce955ed83') in 0.0059529 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.672969 seconds.
+  path: Assets/Scenes/Levels/Level_01.unity
+  artifactKey: Guid(7c462238ab5d21449a8fe734c67d5b7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Levels/Level_01.unity using Guid(7c462238ab5d21449a8fe734c67d5b7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22b19a9f269a0829fdc103b60448ab5b') in 0.0055204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 383.566186 seconds.
+  path: Assets/Scenes/GameLevels/Level2.unity
+  artifactKey: Guid(78190db630070264baf139b8a43cecfd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Level2.unity using Guid(78190db630070264baf139b8a43cecfd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2867141eca5b422f7b5a7e7ba09a9b1e') in 0.0045385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.033482 seconds.
+  path: Assets/Scenes/GameLevels/Level1.unity
+  artifactKey: Guid(a652632c76701c44d8c3477947ccdbb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Level1.unity using Guid(a652632c76701c44d8c3477947ccdbb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5e5a742580a7c41ae3dabe58141492fe') in 0.0048426 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 366.621666 seconds.
+  path: Assets/Scenes/GameLevels/Level1.unity
+  artifactKey: Guid(a652632c76701c44d8c3477947ccdbb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GameLevels/Level1.unity using Guid(a652632c76701c44d8c3477947ccdbb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a1eae4a31c74c865148764907327422') in 0.0010673 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.195279 seconds.
+  path: Assets/Scenes/GameLevels/Level2.unity
+  artifactKey: Guid(78190db630070264baf139b8a43cecfd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameLevels/Level2.unity using Guid(78190db630070264baf139b8a43cecfd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '60994da1123fb3db16dcc3913abfb428') in 0.0058292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.516063 seconds.
+  path: Assets/Scenes/GameLevels/Level2.unity
+  artifactKey: Guid(78190db630070264baf139b8a43cecfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GameLevels/Level2.unity using Guid(78190db630070264baf139b8a43cecfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '685c14ccf8e4e52189b8c4994dcdfdfa') in 0.0006135 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
