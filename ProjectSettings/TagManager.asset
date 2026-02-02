@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Earth
+  - Wind
+  - Ground
+  - Player1
   layers:
   - Default
   - TransparentFX

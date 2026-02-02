@@ -66,6 +66,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuController.cs" />
+    <Compile Include="Assets\Scenes\GameLevels\GamelevelScripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Earth\EarthPillar.cs" />
     <Compile Include="Assets\Scripts\Earth\PillarPlacementValidator.cs" />
     <Compile Include="Assets\Scripts\Earth\Anchorable2D.cs" />
