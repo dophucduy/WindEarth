@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Earth
+  - Wind
+  - Ground
+  - Player1
+  - Player2
+  - Trap
   layers:
   - Default
   - TransparentFX
@@ -12,10 +18,10 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - Player
   - Ground
   - Heavy
-  - 
+  - Pushable
   - 
   - 
   - 
@@ -40,6 +46,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1150680317
+    locked: 0
+  - name: Ground
+    uniqueID: 2770927461
+    locked: 0
+  - name: Player
+    uniqueID: 1302073073
     locked: 0
   m_RenderingLayers:
   - Default

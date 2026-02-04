@@ -3,9 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour 
 {
+    public string LevelSelect;
     public void PlayGame()
     {
-        SceneManager.LoadScene("Levels");
+        SceneManager.LoadScene(LevelSelect);
     }
 
     public void OpenSettings()
