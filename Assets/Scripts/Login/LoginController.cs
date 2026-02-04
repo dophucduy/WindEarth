@@ -11,7 +11,8 @@ public class LoginController : MonoBehaviour
     public TMP_Text errorText;
 
     [Header("API")]
-    public string loginUrl = "https://localhost:7068/api/Authentication/login";
+    //public string loginUrl = "https://localhost:7068/api/Authentication/login";
+    public string loginUrl = "https://p0fbncb4-7068.asse.devtunnels.ms/api/Authentication/login";
 
     public void OnLoginClicked()
     {

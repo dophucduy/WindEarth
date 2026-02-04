@@ -66,7 +66,8 @@ public class RegisterController : MonoBehaviour
 
     IEnumerator RegisterCoroutine(string username, string password)
     {
-        string url = "https://localhost:7068/api/Authentication/register";
+        //string url = "https://localhost:7068/api/Authentication/register";
+        string url = "https://p0fbncb4-7068.asse.devtunnels.ms/api/Authentication/register";
 
         RegisterRequest data = new RegisterRequest
         {
