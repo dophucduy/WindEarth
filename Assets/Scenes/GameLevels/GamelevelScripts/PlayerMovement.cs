@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement; // <--- ADDED: Needed to reload the scene
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Jumping")]
     public float jumpPower = 10f;
-    public float jumpCutMultiplier = 0.5f; // 0.5 = cut height by half on release
+    public float jumpCutMultiplier = 0.5f;
 
     [Header("Ground Detection")]
     public Transform groundCheck;
@@ -20,38 +21,57 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Unity 6: Use 'linearVelocity' instead of 'velocity'
+        // Move the player
         rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
     }
 
     public void Move(InputAction.CallbackContext context)
     {
-
-
         horizontalMovement = context.ReadValue<Vector2>().x;
     }
 
     public void Jump(InputAction.CallbackContext context)
     {
-        // 1. Start Jump (Button Pressed)
         if (context.performed && IsGrounded())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
         }
 
-        // 2. Low Jump (Button Released Early)
-        // If we release the button AND we are still moving up...
         if (context.canceled && rb.linearVelocity.y > 0f)
         {
-            // ...cut the vertical speed by our multiplier
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * jumpCutMultiplier);
         }
     }
 
-    // Simple helper to check if we are on the ground
+    // --- NEW SECTION: DEATH LOGIC ---
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // If we hit an object tagged as "Trap", we die
+        if (collision.gameObject.CompareTag("Trap"))
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Player Died!");
+        // Reloads the current scene to restart
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    // --------------------------------
+
     private bool IsGrounded()
     {
-        // Creates a small circle at the feet to check for ground collision
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(groundCheck.position, 0.2f);
+        }
     }
 }

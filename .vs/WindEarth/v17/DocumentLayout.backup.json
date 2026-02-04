@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\gamelevels\\gamelevelscripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|c:\\uni\\pru213\\proj\\windearth\\assets\\scenes\\gamelevels\\gamelevelscripts\\levelfinishmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|C:\\uni\\pru213\\proj\\WindEarth\\assets\\scenes\\gamelevels\\gamelevelscripts\\levelfinishmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\gamelevels\\gamelevelscripts\\levelfinishmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -88,7 +88,7 @@
               "RelativeDocumentMoniker": "Assets\\Scenes\\GameLevels\\GamelevelScripts\\PlayerMovement.cs",
               "ToolTip": "C:\\uni\\pru213\\proj\\WindEarth\\Assets\\Scenes\\GameLevels\\GamelevelScripts\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scenes\\GameLevels\\GamelevelScripts\\PlayerMovement.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwCAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T08:47:35.79Z",
               "EditorCaption": ""
@@ -103,8 +103,7 @@
               "RelativeToolTip": "Assets\\Scenes\\GameLevels\\GamelevelScripts\\LevelFinishManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T08:18:28.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T08:18:28.03Z"
             },
             {
               "$type": "Document",
