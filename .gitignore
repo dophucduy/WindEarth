@@ -59,3 +59,11 @@ crashlytics-build.properties
 .DS_Store*
 Thumbs.db
 Desktop.ini
+.plastic/
+ignore.conf
+/pkgs/
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
