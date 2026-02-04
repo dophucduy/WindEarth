@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\uni\\pru213\\proj\\WindEarth\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|c:\\uni\\pru213\\proj\\windearth\\assets\\scenes\\gamelevels\\gamelevelscripts\\flagtriggerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|C:\\uni\\pru213\\proj\\WindEarth\\assets\\scenes\\gamelevels\\gamelevelscripts\\levelfinishmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\gamelevels\\gamelevelscripts\\levelfinishmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|c:\\uni\\pru213\\proj\\windearth\\assets\\scenes\\gamelevels\\gamelevelscripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\gamelevels\\gamelevelscripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|C:\\uni\\pru213\\proj\\WindEarth\\assets\\scenes\\gamelevels\\gamelevelscripts\\flagtriggerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\gamelevels\\gamelevelscripts\\flagtriggerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|c:\\uni\\pru213\\proj\\windearth\\assets\\textmesh pro\\fonts\\press_start_2p\\ofl.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|C:\\uni\\pru213\\proj\\WindEarth\\assets\\textmesh pro\\fonts\\press_start_2p\\ofl.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{16D6E076-0E98-53F0-B691-29173AC24FE1}|Assembly-CSharp.csproj|solutionrelative:assets\\textmesh pro\\fonts\\press_start_2p\\ofl.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
@@ -38,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,20 +82,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\uni\\pru213\\proj\\WindEarth\\Assets\\Scenes\\GameLevels\\GamelevelScripts\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\GameLevels\\GamelevelScripts\\PlayerMovement.cs",
+              "ToolTip": "C:\\uni\\pru213\\proj\\WindEarth\\Assets\\Scenes\\GameLevels\\GamelevelScripts\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scenes\\GameLevels\\GamelevelScripts\\PlayerMovement.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAowC4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T08:47:35.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LevelFinishManager.cs",
+              "DocumentMoniker": "C:\\uni\\pru213\\proj\\WindEarth\\Assets\\Scenes\\GameLevels\\GamelevelScripts\\LevelFinishManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\GameLevels\\GamelevelScripts\\LevelFinishManager.cs",
+              "ToolTip": "C:\\uni\\pru213\\proj\\WindEarth\\Assets\\Scenes\\GameLevels\\GamelevelScripts\\LevelFinishManager.cs",
+              "RelativeToolTip": "Assets\\Scenes\\GameLevels\\GamelevelScripts\\LevelFinishManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T08:18:28.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FlagTriggerScript.cs",
               "DocumentMoniker": "C:\\uni\\pru213\\proj\\WindEarth\\Assets\\Scenes\\GameLevels\\GamelevelScripts\\FlagTriggerScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\GameLevels\\GamelevelScripts\\FlagTriggerScript.cs",
               "ToolTip": "C:\\uni\\pru213\\proj\\WindEarth\\Assets\\Scenes\\GameLevels\\GamelevelScripts\\FlagTriggerScript.cs",
               "RelativeToolTip": "Assets\\Scenes\\GameLevels\\GamelevelScripts\\FlagTriggerScript.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAA3wA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T08:12:49.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T08:12:49.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "OFL.txt",
               "DocumentMoniker": "C:\\uni\\pru213\\proj\\WindEarth\\Assets\\TextMesh Pro\\Fonts\\Press_Start_2P\\OFL.txt",
               "RelativeDocumentMoniker": "Assets\\TextMesh Pro\\Fonts\\Press_Start_2P\\OFL.txt",
@@ -95,12 +128,11 @@
               "RelativeToolTip": "Assets\\TextMesh Pro\\Fonts\\Press_Start_2P\\OFL.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-01-29T05:43:00.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T05:43:00.808Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "BackToMenu.cs",
               "DocumentMoniker": "C:\\uni\\pru213\\proj\\WindEarth\\Assets\\Scripts\\MainMenu\\BackToMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\BackToMenu.cs",
@@ -112,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "LevelBtn.cs",
               "DocumentMoniker": "C:\\uni\\pru213\\proj\\WindEarth\\Assets\\Scripts\\MainMenu\\LevelBtn.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\LevelBtn.cs",
@@ -124,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "LevelSelectManager.cs",
               "DocumentMoniker": "C:\\uni\\pru213\\proj\\WindEarth\\Assets\\Scripts\\MainMenu\\LevelSelectManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\LevelSelectManager.cs",
@@ -136,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MainMenuController.cs",
               "DocumentMoniker": "C:\\uni\\pru213\\proj\\WindEarth\\Assets\\Scripts\\MainMenu\\MainMenuController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\MainMenuController.cs",
@@ -148,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "FindWorkspace.cs",
               "DocumentMoniker": "C:\\uni\\pru213\\proj\\WindEarth\\Library\\PackageCache\\com.unity.collab-proxy@3351acaba9c9\\Editor\\FindWorkspace.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.collab-proxy@3351acaba9c9\\Editor\\FindWorkspace.cs",
