@@ -21,9 +21,17 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Move the player
-        rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
+        // Thêm lực di chuyển thay vì set velocity
+        rb.AddForce(Vector2.right * horizontalMovement * moveSpeed);
+
+        // Giới hạn tốc độ tối đa để không bay mất kiểm soát
+        float maxSpeed = 8f;
+        rb.linearVelocity = new Vector2(
+            Mathf.Clamp(rb.linearVelocity.x, -maxSpeed, maxSpeed),
+            rb.linearVelocity.y
+        );
     }
+
 
     public void Move(InputAction.CallbackContext context)
     {
