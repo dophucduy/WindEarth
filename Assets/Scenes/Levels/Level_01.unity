@@ -684,8 +684,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5018158b9b56af4f9f7d39bff712cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  windTag: Wind
-  earthTag: Earth
 --- !u!1 &561786018
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,9 +713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b60ff7efa9ac34e952b16cdba1de9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  nextLevelSceneName: Level_02
-  fallbackToMainMenu: 1
-  mainMenuSceneName: MainMenu
 --- !u!4 &561786020
 Transform:
   m_ObjectHideFlags: 0
@@ -1417,6 +1412,7 @@ GameObject:
   - component: {fileID: 831717140}
   - component: {fileID: 831717139}
   - component: {fileID: 831717138}
+  - component: {fileID: 831717143}
   m_Layer: 0
   m_Name: Idle (32x32)_0
   m_TagString: Earth
@@ -1458,7 +1454,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.11475819, y: -0.12443417}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1468,7 +1464,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1.6543757, y: 1.7511317}
   m_EdgeRadius: 0
 --- !u!50 &831717139
 Rigidbody2D:
@@ -1509,12 +1505,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5dcd413a3ec8ec44a95c3c6d22def29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  role: 0
-  speed: 3
-  jumpForce: 3
-  leftKey: 0
-  rightKey: 0
-  jumpKey: 0
+  rb: {fileID: 0}
+  isPlayer1: 1
+  moveSpeed: 5
+  jumpPower: 10
+  jumpCutMultiplier: 0.5
+  groundCheck: {fileID: 0}
+  groundLayer:
+    m_Bits: 0
 --- !u!212 &831717141
 SpriteRenderer:
   serializedVersion: 2
@@ -1589,6 +1587,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &831717143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831717137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d080773d26561a43afca39c899206a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  rb: {fileID: 0}
+  isPlayer1: 1
+  moveSpeed: 5
+  jumpPower: 10
+  jumpCutMultiplier: 0.5
+  groundCheck: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1116631008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,8 +1758,9 @@ GameObject:
   - component: {fileID: 1508119963}
   - component: {fileID: 1508119962}
   - component: {fileID: 1508119961}
+  - component: {fileID: 1508119966}
   m_Layer: 0
-  m_Name: Idle (32x32)_0 (1)
+  m_Name: wind
   m_TagString: Wind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1758,12 +1778,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5dcd413a3ec8ec44a95c3c6d22def29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  role: 1
-  speed: 3
-  jumpForce: 3
-  leftKey: 0
-  rightKey: 0
-  jumpKey: 0
+  rb: {fileID: 0}
+  isPlayer1: 1
+  moveSpeed: 5
+  jumpPower: 10
+  jumpCutMultiplier: 0.5
+  groundCheck: {fileID: 0}
+  groundLayer:
+    m_Bits: 0
 --- !u!50 &1508119962
 Rigidbody2D:
   serializedVersion: 5
@@ -1825,17 +1847,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.01430434, y: -0.24316931}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 1.4929439, y: 1.6188192}
   m_EdgeRadius: 0
 --- !u!212 &1508119964
 SpriteRenderer:
@@ -1906,11 +1928,32 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.9685, y: 7.1131, z: 0}
-  m_LocalScale: {x: 2.7606745, y: 3.1957016, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1508119966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508119960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d080773d26561a43afca39c899206a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  rb: {fileID: 0}
+  isPlayer1: 0
+  moveSpeed: 5
+  jumpPower: 10
+  jumpCutMultiplier: 0.5
+  groundCheck: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 144
 --- !u!1 &1740548907
 GameObject:
   m_ObjectHideFlags: 0
