@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void Die()
+     void Die()
     {
         Debug.Log("Player Died!");
         // Reloads the current scene to restart
