@@ -47,6 +47,13 @@ public class FanTrap2D : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        ElementIdentity identity = other.GetComponent<ElementIdentity>();
+
+        if (identity != null && identity.elementType == ElementType.Wind)
+        {
+            return; // Wind is immune to fan
+        }
+
         if (((1 << other.gameObject.layer) & affectedLayers) == 0) return;
 
         var rb = other.attachedRigidbody;
