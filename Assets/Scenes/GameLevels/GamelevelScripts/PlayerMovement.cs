@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public Animator animator;
+    private bool isDead = false;
 
     [Header("Player Selection")]
     public bool isPlayer1 = true; // Player 1 uses AWD, Player 2 uses Arrow Keys
@@ -34,6 +36,9 @@ public class PlayerMovement : MonoBehaviour
                 Debug.LogError("PlayerMovement: No Rigidbody2D found! Please add a Rigidbody2D component.");
             }
         }
+
+        if (animator == null)
+            animator = GetComponent<Animator>();
 
         // Auto-create ground check if not set
         if (groundCheck == null)
@@ -117,6 +122,19 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Die()
+    {
+        if (isDead) return;
+        isDead = true;
+
+        animator.SetTrigger("Die");
+
+        rb.linearVelocity = Vector2.zero;
+        this.enabled = false;
+
+        Invoke(nameof(GameOver), 1f);
+    }
+
+    void GameOver()
     {
         LevelFinishManager.Instance.GameOver();
     }
