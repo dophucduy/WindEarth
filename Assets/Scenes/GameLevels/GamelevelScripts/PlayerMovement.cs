@@ -116,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void Die()
+     void Die()
     {
         LevelFinishManager.Instance.GameOver();
     }
