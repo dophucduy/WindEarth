@@ -12,7 +12,7 @@ public class LoginController : MonoBehaviour
 
     [Header("API")]
     //public string loginUrl = "https://localhost:7068/api/Authentication/login";
-    public string loginUrl = "https://p0fbncb4-7068.asse.devtunnels.ms/api/Authentication/login";
+    public string loginUrl = "https://3vl40dht-7068.asse.devtunnels.ms/api/Authentication/login";
 
     public void OnLoginClicked()
     {
