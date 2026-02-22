@@ -32,7 +32,8 @@ public class NetworkUI : MonoBehaviour
     {
         var transport = NetworkManager.Singleton.GetComponent<UnityTransport>();
         
-        transport.ConnectionData.Address = "0.0.0.0";
+        transport.ConnectionData.ServerListenAddress = "0.0.0.0";
+        transport.ConnectionData.Address = "127.0.0.1";
 
         NetworkManager.Singleton.StartHost();
 
