@@ -570,7 +570,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1116205138
+--- !u!1 &1218317312
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -585,23 +585,26 @@ GameObject:
   - component: {fileID: 1116205139}
   - component: {fileID: 1116205142}
   - component: {fileID: 1116205145}
+  - component: {fileID: 1218317315}
+  - component: {fileID: 1218317314}
+  - component: {fileID: 1218317313}
   m_Layer: 0
-  m_Name: Earth
-  m_TagString: Player1
+  m_Name: GameManager
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1116205139
+--- !u!114 &1218317313
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116205138}
+  m_GameObject: {fileID: 1218317312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Script: {fileID: 11500000, guid: 75937e5915f22754988156c7d28aa4e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
   m_Actions: {fileID: -944628639613478452, guid: 567187249de419a4c83d0a2586f951b7, type: 3}
@@ -768,15 +771,22 @@ Rigidbody2D:
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!114 &1116205142
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSpawner
+  ShowTopMostFoldoutHeaderGroup: 1
+  player1Prefab: {fileID: 5010288074897179348, guid: 97f9f107e49e6e4418145ac290d19925, type: 3}
+  player2Prefab: {fileID: 9219998218396868485, guid: d33168fd165fd254a8609a31753de601, type: 3}
+  spawnPointP1: {fileID: 0}
+  spawnPointP2: {fileID: 0}
+--- !u!114 &1218317314
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116205138}
+  m_GameObject: {fileID: 1218317312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d080773d26561a43afca39c899206a7, type: 3}
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   rb: {fileID: 1116205141}
@@ -848,19 +858,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!4 &1116205144
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 3451983808
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!4 &1218317315
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116205138}
+  m_GameObject: {fileID: 1218317312}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.21, y: 18.39, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 9.84362, y: 4.2299, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1899136636}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1499683962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1499683964}
+  - component: {fileID: 1499683963}
+  m_Layer: 0
+  m_Name: PlayerSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1499683963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499683962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44de5e07eff0d7946aacd80a5f804a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CustomPlayerSpawner
+  windPrefab: {fileID: 6813303150202109985, guid: 7063bd23d9d845641afe103371752f1f, type: 3}
+  earthPrefab: {fileID: 9219998218396868485, guid: d33168fd165fd254a8609a31753de601, type: 3}
+--- !u!4 &1499683964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499683962}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 847.1406, y: 291.96353, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1116205145
@@ -6667,7 +6739,7 @@ SceneRoots:
   - {fileID: 804178042}
   - {fileID: 2045744725}
   - {fileID: 815000954}
-  - {fileID: 1116205144}
-  - {fileID: 1772740141}
   - {fileID: 8622041230302288827}
   - {fileID: 5995513589235164735}
+  - {fileID: 1499683964}
+  - {fileID: 1218317315}

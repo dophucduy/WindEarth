@@ -1,27 +1,20 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class LevelSelectManager : MonoBehaviour
 {
     public GameObject levelButtonPrefab;
-    public Transform gridParent;
-    public int totalLevels = 12;
+    public Transform[] levelSlots;
+    public int totalLevels = 5;
 
     void Start()
     {
-        for (int i = 1; i <= totalLevels; i++)
+        for (int i = 0; i < totalLevels && i < levelSlots.Length; i++)
         {
-            int levelIndex = i;
-            GameObject btn = Instantiate(levelButtonPrefab, gridParent);
-            btn.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "Level " + i;
+            GameObject btn = Instantiate(levelButtonPrefab, levelSlots[i]);
 
-            btn.GetComponent<UnityEngine.UI.Button>()
-               .onClick.AddListener(() => LoadLevel(levelIndex));
+            btn.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+
+            btn.GetComponent<LevelButton>().Setup(i + 1);
         }
-    }
-
-    void LoadLevel(int level)
-    {
-        SceneManager.LoadScene("Level" + level);
     }
 }
