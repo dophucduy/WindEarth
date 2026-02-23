@@ -17,8 +17,8 @@ using UnityEngine;
 public enum ElementType
 {
     Wind,
-    Fire,
-    Water,
+
+ 
     Earth,
     Generic
 }
