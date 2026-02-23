@@ -56,6 +56,12 @@ public class PlayerMovement : MonoBehaviour
             groundLayer = LayerMask.GetMask("Default");
             Debug.LogWarning("PlayerMovement: groundLayer not set, using 'Default' layer. Set it properly in Inspector for better control.");
         }
+
+        // Wind player (player1) jumps higher by design
+        if (isPlayer1)
+        {
+            jumpPower = jumpPower * 2f;
+        }
     }
 
     void Update()
@@ -121,8 +127,16 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void Die()
+     void Die()
     {
+        // Try to let a PlayerLives component handle respawn; fallback to immediate game over
+        var lives = GetComponent<PlayerLives>();
+        if (lives != null)
+        {
+            lives.HandleDeath(isPlayer1);
+            return;
+        }
+
         if (isDead) return;
         isDead = true;
 
