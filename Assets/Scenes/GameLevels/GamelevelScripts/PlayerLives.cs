@@ -14,6 +14,7 @@ public class PlayerLives : MonoBehaviour
     public void HandleDeath(bool isPlayer1)
     {
         respawnsUsed++;
+        Debug.Log($"PlayerLives: HandleDeath called. Used {respawnsUsed}/{maxRespawns}");
 
         if (respawnsUsed > maxRespawns)
         {
@@ -38,5 +39,16 @@ public class PlayerLives : MonoBehaviour
             // reload current scene to reset player state
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
+    void Start()
+    {
+        // auto create a respawn point at current position if none assigned
+        if (respawnPoint == null)
+        {
+            var go = new GameObject("RespawnPoint");
+            go.transform.position = transform.position;
+            respawnPoint = go.transform;
+        }
+    }
     }
 }

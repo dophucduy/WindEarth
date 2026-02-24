@@ -5957,6 +5957,7 @@ GameObject:
   - component: {fileID: 1772740137}
   - component: {fileID: 1772740136}
   - component: {fileID: 1772740142}
+  - component: {fileID: 1772740143}
   m_Layer: 0
   m_Name: Wind
   m_TagString: Player2
@@ -6248,6 +6249,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c0839baaa46b014bb6c3654847146a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementIdentity
+--- !u!114 &1772740143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772740135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aab73e8db21c3f4285318c241023642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerLives
+  maxRespawns: 2
+  respawnPoint: {fileID: 321145234}
 --- !u!1 &1899136635
 GameObject:
   m_ObjectHideFlags: 0

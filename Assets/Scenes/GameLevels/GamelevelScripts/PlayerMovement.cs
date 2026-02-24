@@ -62,6 +62,14 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpPower = jumpPower * 2f;
         }
+
+    }
+
+    void Awake()
+    {
+        // Ensure a PlayerLives component exists so dying will trigger respawn logic
+        if (GetComponent<PlayerLives>() == null)
+            gameObject.AddComponent<PlayerLives>();
     }
 
     void Update()
@@ -125,6 +133,12 @@ public class PlayerMovement : MonoBehaviour
         {
             Die();
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Trap"))
+            Die();
     }
 
      void Die()
