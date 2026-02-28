@@ -1,5 +1,6 @@
 using UnityEngine;
 using Unity.Netcode;
+using System.Collections.Generic;
 
 public class PlayerSpawner : NetworkBehaviour
 {
@@ -16,15 +17,20 @@ public class PlayerSpawner : NetworkBehaviour
         if (IsServer)
         {
             NetworkManager.Singleton.OnClientConnectedCallback += SpawnPlayerForClient;
-             if (!NetworkManager.Singleton.LocalClient.PlayerObject)
+            // if (!NetworkManager.Singleton.LocalClient.PlayerObject)
+            // {
+            //      SpawnPlayerForClient(NetworkManager.Singleton.LocalClientId);
+            // }
+            foreach (ulong clientId in NetworkManager.Singleton.ConnectedClientsIds)
             {
-                 SpawnPlayerForClient(NetworkManager.Singleton.LocalClientId);
+                SpawnPlayerForClient(clientId);
             }
         }
     }
 
     private void SpawnPlayerForClient(ulong clientId)
-    {if (NetworkManager.Singleton.ConnectedClients[clientId].PlayerObject != null)
+    {
+        if (NetworkManager.Singleton.ConnectedClients[clientId].PlayerObject != null)
         {
             return;
         }
