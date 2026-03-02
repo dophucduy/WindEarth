@@ -14,18 +14,13 @@ public class PlayerSpawner : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
-        if (IsServer)
+        if (!IsServer) return;
+        NetworkManager.Singleton.OnClientConnectedCallback += SpawnPlayerForClient;
+        foreach (ulong clientId in NetworkManager.Singleton.ConnectedClientsIds)
         {
-            NetworkManager.Singleton.OnClientConnectedCallback += SpawnPlayerForClient;
-            // if (!NetworkManager.Singleton.LocalClient.PlayerObject)
-            // {
-            //      SpawnPlayerForClient(NetworkManager.Singleton.LocalClientId);
-            // }
-            foreach (ulong clientId in NetworkManager.Singleton.ConnectedClientsIds)
-            {
-                SpawnPlayerForClient(clientId);
-            }
+            SpawnPlayerForClient(clientId);
         }
+        
     }
 
     private void SpawnPlayerForClient(ulong clientId)
@@ -52,6 +47,7 @@ public class PlayerSpawner : NetworkBehaviour
         GameObject playerInstance = Instantiate(chosenPrefab, chosenSpawnPoint.position, Quaternion.identity);
         
         playerInstance.GetComponent<NetworkObject>().SpawnAsPlayerObject(clientId);
+        //playerInstance.transform.position = chosenSpawnPoint.position;
     }
 
     public override void OnNetworkDespawn()

@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class LevelLoader : NetworkBehaviour
 {
-    //[SerializeField] private string levelName = "Level1";
+    [SerializeField] private string levelName;
 
     public void LoadLevel()
     {
+        Debug.LogWarning("Click");
         if (!IsServer) return;
-        //var status = NetworkManager.Singleton.SceneManager.LoadScene("Level" + GameData.SelectedLevel, LoadSceneMode.Single);
-        var status = NetworkManager.Singleton.SceneManager.LoadScene("Level1", LoadSceneMode.Single);
+        var status = NetworkManager.Singleton.SceneManager.LoadScene(levelName, LoadSceneMode.Single);
         if (status != SceneEventProgressStatus.Started)
         {
             Debug.LogWarning("Failed to load scene");

@@ -7,6 +7,8 @@ public class SmashMovement : NetworkBehaviour
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float jumpForce = 15f;
     [SerializeField] private Rigidbody2D rb;
+    public Animator animator;
+    private bool isDead = false;
     
     [SerializeField] private bool isPushing;
     [SerializeField] private float pushRange = 1f;

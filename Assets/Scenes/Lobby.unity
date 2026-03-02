@@ -10874,6 +10874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelLoader
   ShowTopMostFoldoutHeaderGroup: 1
+  levelName: LevelSelect
 --- !u!1 &1178777650
 GameObject:
   m_ObjectHideFlags: 0
