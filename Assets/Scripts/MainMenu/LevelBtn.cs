@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Unity.Netcode;
 
 
 public class LevelButton : MonoBehaviour
@@ -27,6 +28,14 @@ public class LevelButton : MonoBehaviour
 
         Debug.Log("Selected Scene: " + GameData.SelectedLevel);
 
-        SceneManager.LoadScene("Lobby");
+        //SceneManager.LoadScene("Lobby");
+        if (!NetworkManager.Singleton.IsServer) return;
+        foreach (ulong clientId in NetworkManager.Singleton.ConnectedClientsIds)
+        {
+            var playerObj = NetworkManager.Singleton.ConnectedClients[clientId].PlayerObject;
+            if (playerObj != null)
+                playerObj.Despawn(true);
+        }
+        NetworkManager.Singleton.SceneManager.LoadScene("Level" + GameData.SelectedLevel, LoadSceneMode.Single);
     }
 }
