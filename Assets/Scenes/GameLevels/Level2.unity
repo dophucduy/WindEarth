@@ -547,6 +547,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421161016}
   m_CullTransparentMesh: 1
+--- !u!114 &434078874 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5675483615646380639, guid: 02a6cd4724941b3439b54a6c0e303551, type: 3}
+  m_PrefabInstance: {fileID: 216488697}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289a98d3cdebae646a73658e855d5f50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlagTriggerSciprt
 --- !u!1 &450214207
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,7 +882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelFinishManager
   flags:
   - {fileID: 389246975}
-  - {fileID: 0}
+  - {fileID: 434078874}
   winPanel: {fileID: 0}
   gameOverPanel: {fileID: 0}
 --- !u!4 &681165989
@@ -8591,7 +8602,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Next Level
+  m_Text: Return to level
 --- !u!222 &2065493722
 CanvasRenderer:
   m_ObjectHideFlags: 0
