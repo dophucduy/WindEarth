@@ -9,7 +9,6 @@ public class LevelLoader : NetworkBehaviour
 
     public void LoadLevel()
     {
-        Debug.LogWarning("Click");
         if (!IsServer) return;
         var status = NetworkManager.Singleton.SceneManager.LoadScene(levelName, LoadSceneMode.Single);
         if (status != SceneEventProgressStatus.Started)
