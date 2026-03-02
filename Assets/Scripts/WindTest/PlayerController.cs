@@ -7,6 +7,8 @@ public class SmashMovement : NetworkBehaviour
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float jumpForce = 15f;
     [SerializeField] private Rigidbody2D rb;
+    public Animator animator;
+    private bool isDead = false;
     
     [SerializeField] private bool isPushing;
     [SerializeField] private float pushRange = 1f;
@@ -69,7 +71,6 @@ public class SmashMovement : NetworkBehaviour
         if (!IsOwner) return; 
 
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
-        
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
         
         if (isPushing)
@@ -82,7 +83,8 @@ public class SmashMovement : NetworkBehaviour
     {
         if (!IsOwner) return;
 
-        if (isGrounded)
+        bool grounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        if (grounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }

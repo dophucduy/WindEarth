@@ -1,5 +1,7 @@
 using UnityEngine;
 using Unity.Netcode;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class PlayerSpawner : NetworkBehaviour
 {
@@ -13,18 +15,31 @@ public class PlayerSpawner : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
-        if (IsServer)
+        if (!IsServer) return;
+        NetworkManager.Singleton.OnClientConnectedCallback += SpawnPlayerForClient;
+        // foreach (ulong clientId in NetworkManager.Singleton.ConnectedClientsIds)
+        // {
+        //     SpawnPlayerForClient(clientId);
+        // }
+        NetworkManager.Singleton.SceneManager.OnLoadEventCompleted += OnSceneLoadEventCompleted;
+    }
+
+    private void OnSceneLoadEventCompleted(string sceneName, LoadSceneMode loadSceneMode,
+    List<ulong> clientsCompleted, List<ulong> clientsTimedOut)
+    {
+        if (sceneName != gameObject.scene.name) return;
+
+        foreach (ulong clientId in clientsCompleted)
         {
-            NetworkManager.Singleton.OnClientConnectedCallback += SpawnPlayerForClient;
-             if (!NetworkManager.Singleton.LocalClient.PlayerObject)
-            {
-                 SpawnPlayerForClient(NetworkManager.Singleton.LocalClientId);
-            }
+            SpawnPlayerForClient(clientId);
         }
+
+        NetworkManager.Singleton.SceneManager.OnLoadEventCompleted -= OnSceneLoadEventCompleted;
     }
 
     private void SpawnPlayerForClient(ulong clientId)
-    {if (NetworkManager.Singleton.ConnectedClients[clientId].PlayerObject != null)
+    {
+        if (NetworkManager.Singleton.ConnectedClients[clientId].PlayerObject != null)
         {
             return;
         }
@@ -46,6 +61,7 @@ public class PlayerSpawner : NetworkBehaviour
         GameObject playerInstance = Instantiate(chosenPrefab, chosenSpawnPoint.position, Quaternion.identity);
         
         playerInstance.GetComponent<NetworkObject>().SpawnAsPlayerObject(clientId);
+        //playerInstance.transform.position = chosenSpawnPoint.position;
     }
 
     public override void OnNetworkDespawn()
@@ -53,6 +69,7 @@ public class PlayerSpawner : NetworkBehaviour
         if (IsServer)
         {
             NetworkManager.Singleton.OnClientConnectedCallback -= SpawnPlayerForClient;
+            NetworkManager.Singleton.SceneManager.OnLoadEventCompleted -= OnSceneLoadEventCompleted;
         }
     }
 }

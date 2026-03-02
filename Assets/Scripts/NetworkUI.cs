@@ -1,16 +1,18 @@
-using UnityEngine;
-using Unity.Netcode;
-using Unity.Netcode.Transports.UTP;
-using UnityEngine.UI;
-using TMPro; 
 using System.Net; 
 using System.Net.Sockets;
+using TMPro; 
+using Unity.Netcode;
+using Unity.Netcode.Transports.UTP;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class NetworkUI : MonoBehaviour
 {
     [Header("Buttons")]
     [SerializeField] private Button hostBtn;
     [SerializeField] private Button joinBtn;
+    //[SerializeField] private Button startBtn;
     
     [Header("UI Elements")]
     [SerializeField] private GameObject connectionPanel; 
@@ -32,7 +34,11 @@ public class NetworkUI : MonoBehaviour
     {
         var transport = NetworkManager.Singleton.GetComponent<UnityTransport>();
         
-        transport.ConnectionData.Address = "0.0.0.0";
+        transport.ConnectionData.ServerListenAddress = "0.0.0.0";
+        transport.ConnectionData.Address = "127.0.0.1";
+
+        //NetworkManager.Singleton.OnServerStarted += OnServerStarted;
+
 
         NetworkManager.Singleton.StartHost();
 
@@ -40,8 +46,23 @@ public class NetworkUI : MonoBehaviour
 
         string localIP = GetLocalIPAddress();
         ipDisplayText.gameObject.SetActive(true);
+        //startBtn.gameObject.SetActive(true);
         ipDisplayText.text = "Host IP: " + localIP;
+
     }
+
+    // private void OnServerStarted()
+    // {
+    //     Debug.Log("Server Started!");
+    //     Debug.Log("Selected Level: " + GameData.SelectedLevel);
+
+    //     NetworkManager.Singleton.OnServerStarted -= OnServerStarted;
+
+    //     NetworkManager.Singleton.SceneManager.LoadScene(
+    //         "Level" + GameData.SelectedLevel,
+    //         LoadSceneMode.Single
+    //     );
+    // }
 
     private void StartClientGame()
     {

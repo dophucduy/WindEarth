@@ -41,12 +41,25 @@ public class FanTrap2D : MonoBehaviour
             float t = Mathf.Clamp01(1f - dist / maxDistance);
             if (t <= 0f) continue;
 
-            rb.AddForce(worldDir * blowForce * t, ForceMode2D.Force);
+            // If this rigidbody belongs to the player, blow it backwards (opposite of fan direction)
+            bool isPlayer = rb.GetComponentInParent<PlayerMovement>() != null ||
+                            rb.GetComponentInParent<PlayerNetworkController>() != null;
+
+            Vector2 appliedDir = isPlayer ? -worldDir : worldDir;
+
+            rb.AddForce(appliedDir * blowForce * t, ForceMode2D.Force);
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        ElementIdentity identity = other.GetComponent<ElementIdentity>();
+
+        if (identity != null && identity.elementType == ElementType.Wind)
+        {
+            return; // Wind is immune to fan
+        }
+
         if (((1 << other.gameObject.layer) & affectedLayers) == 0) return;
 
         var rb = other.attachedRigidbody;
