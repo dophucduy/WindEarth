@@ -71,7 +71,6 @@ public class SmashMovement : NetworkBehaviour
         if (!IsOwner) return; 
 
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
-        
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
         
         if (isPushing)
@@ -84,7 +83,8 @@ public class SmashMovement : NetworkBehaviour
     {
         if (!IsOwner) return;
 
-        if (isGrounded)
+        bool grounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        if (grounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
