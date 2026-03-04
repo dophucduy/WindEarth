@@ -11,8 +11,7 @@ public class LoginController : MonoBehaviour
     public TMP_Text errorText;
 
     [Header("API")]
-    //public string loginUrl = "https://localhost:7068/api/Authentication/login";
-    public string loginUrl = "https://3vl40dht-7068.asse.devtunnels.ms/api/Authentication/login";
+    private string loginUrl = "https://winearthserver.onrender.com/api/Authentication/login";
 
     public void OnLoginClicked()
     {
