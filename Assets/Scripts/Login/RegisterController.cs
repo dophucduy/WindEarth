@@ -66,7 +66,7 @@ public class RegisterController : MonoBehaviour
 
     IEnumerator RegisterCoroutine(string username, string password)
     {
-        //string url = "https://localhost:7068/api/Authentication/register";
+
         string url = "https://winearthserver.onrender.com/api/Authentication/register";
 
         RegisterRequest data = new RegisterRequest
