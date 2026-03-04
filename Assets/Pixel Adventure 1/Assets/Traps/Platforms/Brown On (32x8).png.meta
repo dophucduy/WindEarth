@@ -79,7 +79,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -136,7 +136,7 @@ TextureImporter:
         width: 32
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -158,14 +158,14 @@ TextureImporter:
         width: 32
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 495d82b1c6479594db3235fb6e3cf7ec
+      spriteID: 4e732e5b162bce3438d0819535d9ff61
       internalID: 113249620649802049
       vertices: []
       indices: 
@@ -180,14 +180,14 @@ TextureImporter:
         width: 32
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 161ab562e71e8cf41ab685ca081c8c85
+      spriteID: fc1d1c482da469847ae011044e023b0a
       internalID: -3965723481977160693
       vertices: []
       indices: 
@@ -202,14 +202,14 @@ TextureImporter:
         width: 32
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdbe1cf63db6cb745a3148e6cfd706d9
+      spriteID: 0e1ee6cbd4594614c83779c73dbe9f2a
       internalID: -8422671310359681190
       vertices: []
       indices: 
@@ -224,14 +224,14 @@ TextureImporter:
         width: 32
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb0afa4b7d958a64ea0c4f0fc26d4e89
+      spriteID: 1a101b267e1b3674ca611100be4548b8
       internalID: 6027122724756182200
       vertices: []
       indices: 
@@ -246,14 +246,14 @@ TextureImporter:
         width: 32
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09dc1b7a40dcba0499692a384b5bf65d
+      spriteID: 992fed8d701832d4ab067e8adf4b07b1
       internalID: 3059113826426795209
       vertices: []
       indices: 
@@ -268,14 +268,14 @@ TextureImporter:
         width: 32
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2ba88b9d5c10524bb960adf9d485311
+      spriteID: 1634df117bd4f964f9e9d429443247bb
       internalID: 4722360788381041880
       vertices: []
       indices: 
@@ -290,14 +290,14 @@ TextureImporter:
         width: 32
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11319983793eba34b92fa0b4a7ca6a6f
+      spriteID: 43beb3bb75fd08b44aaff089a9bba0e7
       internalID: -7345710839297778315
       vertices: []
       indices: 
@@ -315,7 +315,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":8.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Brown On (32x8)_0: -3932816638193255715
       Brown On (32x8)_1: 113249620649802049
