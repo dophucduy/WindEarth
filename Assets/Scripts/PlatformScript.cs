@@ -47,7 +47,7 @@ public class PlatformScript : MonoBehaviour
             collision.transform.SetParent(transform);
         }
     }
-
+    //script player roi platform
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
