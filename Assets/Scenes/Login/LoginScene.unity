@@ -3195,7 +3195,7 @@ MonoBehaviour:
   usernameInput: {fileID: 602195959}
   passwordInput: {fileID: 1428934060}
   errorText: {fileID: 403461037}
-  loginUrl: https://localhost:7068/api/Authentication/login
+  loginUrl: 
 --- !u!1 &1096278073
 GameObject:
   m_ObjectHideFlags: 0

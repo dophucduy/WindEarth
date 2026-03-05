@@ -1,7 +1,8 @@
 ﻿using System.Collections;
+using System.Net;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
-using TMPro;
 
 public class LoginController : MonoBehaviour
 {
@@ -11,8 +12,8 @@ public class LoginController : MonoBehaviour
     public TMP_Text errorText;
 
     [Header("API")]
-    //public string loginUrl = "https://localhost:7068/api/Authentication/login";
-    public string loginUrl = "https://3vl40dht-7068.asse.devtunnels.ms/api/Authentication/login";
+
+    private string loginUrl = "https://winearthserver.onrender.com/api/Authentication/login";
 
     public void OnLoginClicked()
     {
@@ -40,25 +41,28 @@ public class LoginController : MonoBehaviour
 
         string json = JsonUtility.ToJson(body);
 
-        UnityWebRequest request = new UnityWebRequest(loginUrl, "POST");
-        byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
-        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-        request.downloadHandler = new DownloadHandlerBuffer();
-        request.SetRequestHeader("Content-Type", "application/json");
-
-        yield return request.SendWebRequest();
-
-        if (request.result != UnityWebRequest.Result.Success)
+        using (UnityWebRequest request = new UnityWebRequest(loginUrl, "POST"))
         {
-            errorText.text = "Network error";
-            Debug.LogError(request.error);
-        }
-        else
-        {
+            byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
+
+            request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("Content-Type", "application/json");
+
+            yield return request.SendWebRequest();
+
+            Debug.Log("Result: " + request.result);
+            Debug.Log("Error: " + request.error);
             Debug.Log("Response: " + request.downloadHandler.text);
 
-            // TODO: parse response JSON
-            HandleLoginSuccess(request.downloadHandler.text);
+            if (request.result != UnityWebRequest.Result.Success)
+            {
+                errorText.text = request.error;
+            }
+            else
+            {
+                HandleLoginSuccess(request.downloadHandler.text);
+            }
         }
     }
 
@@ -77,4 +81,5 @@ public class LoginController : MonoBehaviour
         public string username;
         public string password;
     }
+    
 }

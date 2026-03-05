@@ -231,7 +231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   ShowTopMostFoldoutHeaderGroup: 1
   moveSpeed: 10
-  jumpForce: 15
+  jumpForce: 30
   rb: {fileID: 17919098210825363}
   animator: {fileID: 0}
   isPushing: 0
