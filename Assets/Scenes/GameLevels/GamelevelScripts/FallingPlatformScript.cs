@@ -23,6 +23,8 @@ public class FallingPlatform : NetworkBehaviour
     {
         if (!IsServer) return;
 
+        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+
         if (playersOnPlatform > 0)
         {
             leaveTimer = 0f;
