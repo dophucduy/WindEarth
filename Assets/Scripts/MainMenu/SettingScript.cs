@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class SettingScript : MonoBehaviour
 {
-    public void OpenSettings()
+    public void BackToMenu()
     {
-        SceneManager.LoadScene("Setting");
+        SceneManager.LoadScene("MainMenu");
     }
 
 }

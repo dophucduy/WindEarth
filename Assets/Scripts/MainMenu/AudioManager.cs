@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
+        PlayerPrefs.DeleteAll();
         if (instance == null)
         {
             instance = this;
