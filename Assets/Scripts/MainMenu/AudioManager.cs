@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        PlayerPrefs.DeleteAll();
+       // PlayerPrefs.DeleteAll();
         if (instance == null)
         {
             instance = this;
@@ -44,5 +44,12 @@ public class AudioManager : MonoBehaviour
     {
         sfxSource.volume = volume;
         PlayerPrefs.SetFloat("sfxVolume", volume);
+    }
+
+    public void ChangeMusic(AudioClip newClip)
+    {
+        if (musicSource.clip == newClip) return; 
+        musicSource.clip = newClip;
+        musicSource.Play();
     }
 }

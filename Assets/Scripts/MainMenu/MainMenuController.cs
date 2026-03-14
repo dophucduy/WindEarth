@@ -12,7 +12,7 @@ public class MainMenuController : MonoBehaviour
 
     public void OpenSettings()
     {
-        SceneManager.LoadScene("Setting");
+        SceneManager.LoadScene("Setting", LoadSceneMode.Additive);
     }
 
     public void QuitGame()
