@@ -1,5 +1,6 @@
 using Unity.Netcode;
 using UnityEngine;
+using System.Collections;
 
 public class Trap : NetworkBehaviour
 {
@@ -7,10 +8,18 @@ public class Trap : NetworkBehaviour
     {
         if (!IsServer) return;
 
-        NetworkObject netObj = other.GetComponent<NetworkObject>();
-        if (netObj != null && netObj.IsPlayerObject)
+        SmashMovement player = other.GetComponent<SmashMovement>();
+
+        if (player != null)
         {
-            GameOverManager.Singleton.TriggerGameOverServerRpc();
+            player.Die();
+            StartCoroutine(GameOverDelay());
         }
+    }
+
+    IEnumerator GameOverDelay()
+    {
+        yield return new WaitForSeconds(1.5f); // length of death animation
+        GameOverManager.Singleton.TriggerGameOverServerRpc();
     }
 }
