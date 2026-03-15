@@ -4,7 +4,7 @@ using UnityEngine;
 public class Goal : NetworkBehaviour
 {
     [SerializeField] private int requiredPlayerId;
-    // 0 = Player1/wind, 1 = Player2/earth
+    [SerializeField] private Animator animator;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,6 +15,8 @@ public class Goal : NetworkBehaviour
 
         if (netObj.OwnerClientId == (ulong)requiredPlayerId)
         {
+            animator.SetTrigger("Raise"); // play flag animation
+
             VictoryManager.Singleton.PlayerReachedGoal(requiredPlayerId);
         }
     }
