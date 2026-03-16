@@ -25,6 +25,9 @@ public class SmashMovement : NetworkBehaviour
 
     private void Awake()
     {
+
+        animator = GetComponent<Animator>();
+
         controls = new PlayerControls();
         
         controls.Gameplay.Jump.performed += context => Jump();
@@ -52,31 +55,68 @@ public class SmashMovement : NetworkBehaviour
 
     void Update()
     {
-        if (!IsOwner) return; 
+        //if (!IsOwner || isDead) return; 
 
-        moveInput = controls.Gameplay.Move.ReadValue<Vector2>();
+        //moveInput = controls.Gameplay.Move.ReadValue<Vector2>();
 
-        if (moveInput.x > 0) 
+        //if (moveInput.x > 0) 
+        //{
+        //    transform.localScale = new Vector3(Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
+        //}
+        //else if (moveInput.x < 0) 
+        //{
+        //    transform.localScale = new Vector3(-Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
+        //}
+
+        //// Animation
+        //animator.SetBool("isRunning", Mathf.Abs(moveInput.x) > 0.1f);
+        if (IsOwner)
         {
-            transform.localScale = new Vector3(Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
+            moveInput = controls.Gameplay.Move.ReadValue<Vector2>();
+
+            if (moveInput.x > 0)
+                transform.localScale = new Vector3(Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
+            else if (moveInput.x < 0)
+                transform.localScale = new Vector3(-Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
         }
-        else if (moveInput.x < 0) 
+
+        bool running = Mathf.Abs(rb.linearVelocity.x) > 0.1f;
+
+        if (IsOwner)
         {
-            transform.localScale = new Vector3(-Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
+            SetRunningServerRpc(running);
         }
     }
 
     void FixedUpdate()
     {
-        if (!IsOwner) return; 
+        //if (!IsOwner || isDead) return; 
 
-        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        
-        if (isPushing)
+        //rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+        //isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+
+        //animator.SetBool("isJumping", !isGrounded);
+
+        //animator.SetBool("isFalling", rb.linearVelocity.y < -0.1f && !isGrounded);
+
+        //if (isPushing)
+        //{
+        //    PushObject();
+        //}
+        if (IsOwner)
         {
-            PushObject();
+            rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+
+            if (isPushing)
+            {
+                PushObject();
+            }
         }
+
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+
+        animator.SetBool("isJumping", !isGrounded);
+        animator.SetBool("isFalling", rb.linearVelocity.y < -0.1f && !isGrounded);
     }
 
     void Jump()
@@ -104,5 +144,39 @@ public class SmashMovement : NetworkBehaviour
                 objectRb.AddForce(pushDir * pushForce * objectRb.mass, ForceMode2D.Impulse);
             }
         }
+    }
+
+    public void Die()
+    {
+        if (isDead) return;
+
+        isDead = true;
+        rb.linearVelocity = Vector2.zero;
+
+        TriggerDeathServerRpc();
+    }
+
+    [ServerRpc]
+    void SetRunningServerRpc(bool running)
+    {
+        SetRunningClientRpc(running);
+    }
+
+    [ClientRpc]
+    void SetRunningClientRpc(bool running)
+    {
+        animator.SetBool("isRunning", running);
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    void TriggerDeathServerRpc()
+    {
+        TriggerDeathClientRpc();
+    }
+
+    [ClientRpc]
+    void TriggerDeathClientRpc()
+    {
+        animator.SetTrigger("Die");
     }
 }
