@@ -230,9 +230,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   ShowTopMostFoldoutHeaderGroup: 1
+  characterType: 0
   moveSpeed: 10
-  jumpForce: 30
+  jumpForce: 15
   rb: {fileID: 17919098210825363}
+  fallGravityMultiplier: 3
+  maxFallSpeed: -20
   animator: {fileID: 0}
   isPushing: 0
   pushRange: 1

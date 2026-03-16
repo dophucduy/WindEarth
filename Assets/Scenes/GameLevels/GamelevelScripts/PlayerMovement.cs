@@ -80,7 +80,11 @@ public class PlayerMovement : MonoBehaviour
             // Player 1: A and D for movement, W for jump
             horizontalMovement = 0f;
             if (Input.GetKey(KeyCode.A))
+            {
                 horizontalMovement = -1f;
+                Debug.LogError("abc");
+            }
+
             if (Input.GetKey(KeyCode.D))
                 horizontalMovement = 1f;
 

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7153093352963934532}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 6873452033708723175}
   - component: {fileID: -4511459478185913481}
   - component: {fileID: 3170539701627187697}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Earth
   m_TagString: Player1
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9219998218396868485}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d080773d26561a43afca39c899206a7, type: 3}
   m_Name: 
@@ -366,9 +366,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   ShowTopMostFoldoutHeaderGroup: 1
+  characterType: 1
   moveSpeed: 10
-  jumpForce: 15
+  jumpForce: 8
   rb: {fileID: 17919098210825363, guid: f367e6b2c8983354495eb1ca7c1deddf, type: 3}
+  fallGravityMultiplier: 2.5
+  maxFallSpeed: -20
+  animator: {fileID: 0}
   isPushing: 0
   pushRange: 1
   pushForce: 2
