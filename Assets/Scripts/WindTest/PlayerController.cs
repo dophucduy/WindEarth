@@ -1,12 +1,15 @@
-using UnityEngine;
+﻿using UnityEngine;
 using Unity.Netcode;
 using UnityEngine.InputSystem;
 
 public class SmashMovement : NetworkBehaviour 
 {
+    [SerializeField] private CharacterType characterType;
     [SerializeField] private float moveSpeed = 10f;
-    [SerializeField] private float jumpForce = 15f;
+    [SerializeField] private float jumpForce = 8f;
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private float fallGravityMultiplier = 3f;
+    [SerializeField] private float maxFallSpeed = -20f;
     public Animator animator;
     private bool isDead = false;
     
@@ -22,6 +25,8 @@ public class SmashMovement : NetworkBehaviour
     private PlayerControls controls;
     private Vector2 moveInput;
     private Vector3 defaultScale;
+    private int jumpCount = 0;
+    private int maxJump = 1;
 
     private void Awake()
     {
@@ -30,11 +35,12 @@ public class SmashMovement : NetworkBehaviour
 
         controls = new PlayerControls();
         
-        controls.Gameplay.Jump.performed += context => Jump();
+        controls.Gameplay.Jump.started += context => Jump();
         controls.Gameplay.Push.started += context => isPushing = true;
         controls.Gameplay.Push.canceled += context => isPushing = false;
 
         defaultScale = transform.localScale;
+
     }
 
     public override void OnNetworkSpawn()
@@ -43,6 +49,10 @@ public class SmashMovement : NetworkBehaviour
         {
             controls.Enable();
         }
+        Debug.Log("Character: " + characterType);
+
+        if (characterType == CharacterType.Wind) maxJump = 2;
+        else maxJump = 1;
     }
 
     public override void OnNetworkDespawn()
@@ -51,6 +61,7 @@ public class SmashMovement : NetworkBehaviour
         {
             controls.Disable();
         }
+        Debug.Log("Character: " + characterType + " maxJump: " + maxJump);
     }
 
     void Update()
@@ -90,20 +101,25 @@ public class SmashMovement : NetworkBehaviour
 
     void FixedUpdate()
     {
-        //if (!IsOwner || isDead) return; 
+        if (!IsOwner) return;
 
         //rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
-        //isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        Debug.Log("Velocity: " + rb.linearVelocity);
+        if (Mathf.Abs(moveInput.x) > 0.01f)
+        {
+            rb.linearVelocity = new Vector2(
+                moveInput.x * moveSpeed,
+                rb.linearVelocity.y
+            );
+        }
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
 
-        //animator.SetBool("isJumping", !isGrounded);
+        if (isGrounded && rb.linearVelocity.y <= 0)
+        {
+            jumpCount = 0;
+        }
 
-        //animator.SetBool("isFalling", rb.linearVelocity.y < -0.1f && !isGrounded);
-
-        //if (isPushing)
-        //{
-        //    PushObject();
-        //}
-        if (IsOwner)
+        if (isPushing)
         {
             rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
 
@@ -117,17 +133,39 @@ public class SmashMovement : NetworkBehaviour
 
         animator.SetBool("isJumping", !isGrounded);
         animator.SetBool("isFalling", rb.linearVelocity.y < -0.1f && !isGrounded);
+        Debug.Log("Grounded: " + isGrounded + " JumpCount: " + jumpCount);
+        // tăng tốc độ rơi
+        if (rb.linearVelocity.y < 0)
+        {
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallGravityMultiplier - 1) * Time.fixedDeltaTime;
+        }
+
+        // giới hạn tốc độ rơi
+        if (rb.linearVelocity.y < maxFallSpeed)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, maxFallSpeed);
+        }
+
+       
+
+
     }
 
     void Jump()
     {
         if (!IsOwner) return;
 
-        bool grounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        if (grounded)
+        if (jumpCount < maxJump)
         {
+            Debug.Log("jump force: " + jumpForce);
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            jumpCount++;
         }
+        //bool grounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        //if (grounded)
+        //{
+        //    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        //}
     }
 
     void PushObject()

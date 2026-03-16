@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5009619240822876209}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: -3066314436806604749}
   - component: {fileID: -756476559756791563}
   - component: {fileID: 6008917930088169778}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wind
   m_TagString: Player2
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6813303150202109985}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d080773d26561a43afca39c899206a7, type: 3}
   m_Name: 
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 1039000956
+  GlobalObjectIdHash: 1632378354
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -366,9 +366,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   ShowTopMostFoldoutHeaderGroup: 1
+  characterType: 0
   moveSpeed: 10
-  jumpForce: 15
+  jumpForce: 8
   rb: {fileID: 17919098210825363, guid: 97f9f107e49e6e4418145ac290d19925, type: 3}
+  fallGravityMultiplier: 2.5
+  maxFallSpeed: -20
+  animator: {fileID: 0}
   isPushing: 0
   pushRange: 1
   pushForce: 2
@@ -378,7 +382,7 @@ MonoBehaviour:
   groundCheck: {fileID: 5178988863036272158, guid: 97f9f107e49e6e4418145ac290d19925, type: 3}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 256
 --- !u!114 &-756476559756791563
 MonoBehaviour:
   m_ObjectHideFlags: 0
