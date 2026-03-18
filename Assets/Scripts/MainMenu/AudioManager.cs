@@ -1,55 +1,53 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
+    public AudioMixer audioMixer;
 
     public AudioSource musicSource;
     public AudioSource sfxSource;
 
-    public AudioClip buttonClick;
-
     void Awake()
     {
-       // PlayerPrefs.DeleteAll();
         if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-
-            float musicVolume = PlayerPrefs.GetFloat("musicVolume", 1f);
-            float sfxVolume = PlayerPrefs.GetFloat("sfxVolume", 1f);
-
-            musicSource.volume = musicVolume;
-            sfxSource.volume = sfxVolume;
+            LoadVolume(); 
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+        else { Destroy(gameObject); }
     }
 
-    public void PlayButtonSound()
+    public void ChangeMusic(AudioClip newClip)
     {
-        sfxSource.PlayOneShot(buttonClick);
+        if (musicSource.clip == newClip) return;
+
+        musicSource.clip = newClip;
+        musicSource.Play();
     }
 
     public void SetMusicVolume(float volume)
     {
-        musicSource.volume = volume;
+        // Chuyển đổi giá trị slider (0-1) sang Decibel (-80 đến 20)
+        audioMixer.SetFloat("musicVol", Mathf.Log10(volume) * 20);
         PlayerPrefs.SetFloat("musicVolume", volume);
     }
 
     public void SetSFXVolume(float volume)
     {
-        sfxSource.volume = volume;
+        audioMixer.SetFloat("sfxVol", Mathf.Log10(volume) * 20);
         PlayerPrefs.SetFloat("sfxVolume", volume);
     }
 
-    public void ChangeMusic(AudioClip newClip)
+    void LoadVolume()
     {
-        if (musicSource.clip == newClip) return; 
-        musicSource.clip = newClip;
-        musicSource.Play();
+        float musicVolume = PlayerPrefs.GetFloat("musicVolume", 1f);
+        float sfxVolume = PlayerPrefs.GetFloat("sfxVolume", 1f);
+
+        // Phải đặt giá trị sau khi Mixer đã được nạp hoàn toàn
+        SetMusicVolume(musicVolume);
+        SetSFXVolume(sfxVolume);
     }
 }

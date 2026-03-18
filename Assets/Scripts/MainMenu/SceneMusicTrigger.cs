@@ -1,14 +1,20 @@
 using UnityEngine;
 
-public class SceneMusicTrigger : MonoBehaviour
+public class SceneMusic : MonoBehaviour
 {
-    public AudioClip sceneMusic;
+    public AudioClip bgm;
+    public GameObject audioManagerPrefab; 
 
     void Start()
     {
-        if (AudioManager.instance != null && sceneMusic != null)
+        if (AudioManager.instance == null)
         {
-            AudioManager.instance.ChangeMusic(sceneMusic);
+            Instantiate(audioManagerPrefab);
+        }
+
+        if (bgm != null)
+        {
+            AudioManager.instance.ChangeMusic(bgm);
         }
     }
 }

@@ -1,18 +1,19 @@
+using Unity.AppUI.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class AudioSetting : MonoBehaviour
 {
-    public Slider musicSlider;
-    public Slider sfxSlider;
+    public Slider MusicSlider;
+    public Slider SfxSlider;
 
-     public void Start()
+    public void Start()
     {
-        musicSlider.value = PlayerPrefs.GetFloat("musicVolume", 1f);
-        sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 1f);
+        MusicSlider.value = PlayerPrefs.GetFloat("musicVolume", 1f);
+        SfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 1f);
 
-        musicSlider.onValueChanged.AddListener(SetMusicVolume);
-        sfxSlider.onValueChanged.AddListener(SetSFXVolume);
+        MusicSlider.onValueChanged.AddListener(SetMusicVolume);
+        SfxSlider.onValueChanged.AddListener(SetSFXVolume);
     }
 
     public void SetMusicVolume(float volume)

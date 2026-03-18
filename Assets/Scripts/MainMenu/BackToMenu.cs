@@ -5,6 +5,6 @@ public class BackToMenu : MonoBehaviour
 {
     public void Back()
     {
-        SceneManager.UnloadSceneAsync("Setting");
+        SceneManager.LoadScene("MainMenu");
     }
 }
