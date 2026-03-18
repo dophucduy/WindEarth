@@ -5,11 +5,11 @@ using UnityEngine.InputSystem;
 public class SmashMovement : NetworkBehaviour 
 {
     [SerializeField] private CharacterType characterType;
-    [SerializeField] private float moveSpeed = 10f;
-    [SerializeField] private float jumpForce = 8f;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float jumpForce;
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private float fallGravityMultiplier = 3f;
-    [SerializeField] private float maxFallSpeed = -20f;
+    [SerializeField] private float fallGravityMultiplier;
+    [SerializeField] private float maxFallSpeed;
     public Animator animator;
     private bool isDead = false;
     
@@ -66,21 +66,6 @@ public class SmashMovement : NetworkBehaviour
 
     void Update()
     {
-        //if (!IsOwner || isDead) return; 
-
-        //moveInput = controls.Gameplay.Move.ReadValue<Vector2>();
-
-        //if (moveInput.x > 0) 
-        //{
-        //    transform.localScale = new Vector3(Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
-        //}
-        //else if (moveInput.x < 0) 
-        //{
-        //    transform.localScale = new Vector3(-Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
-        //}
-
-        //// Animation
-        //animator.SetBool("isRunning", Mathf.Abs(moveInput.x) > 0.1f);
         if (IsOwner)
         {
             moveInput = controls.Gameplay.Move.ReadValue<Vector2>();
@@ -104,7 +89,7 @@ public class SmashMovement : NetworkBehaviour
         if (!IsOwner) return;
 
         //rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
-        Debug.Log("Velocity: " + rb.linearVelocity);
+        //Debug.Log("Velocity: " + rb.linearVelocity);
         if (Mathf.Abs(moveInput.x) > 0.01f)
         {
             rb.linearVelocity = new Vector2(
@@ -146,9 +131,6 @@ public class SmashMovement : NetworkBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, maxFallSpeed);
         }
 
-       
-
-
     }
 
     void Jump()
@@ -161,11 +143,6 @@ public class SmashMovement : NetworkBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             jumpCount++;
         }
-        //bool grounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        //if (grounded)
-        //{
-        //    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        //}
     }
 
     void PushObject()

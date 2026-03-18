@@ -1009,7 +1009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Goal
   ShowTopMostFoldoutHeaderGroup: 1
   requiredPlayerId: 1
-  animator: {fileID: 0}
+  animator: {fileID: 804178040}
 --- !u!114 &804178044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8121,6 +8121,7 @@ GameObject:
   - component: {fileID: 2045744721}
   - component: {fileID: 2045744727}
   - component: {fileID: 2045744726}
+  - component: {fileID: 2045744728}
   m_Layer: 0
   m_Name: Flag1
   m_TagString: Untagged
@@ -8181,12 +8182,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045744720}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 289a98d3cdebae646a73658e855d5f50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlagTriggerSciprt
-  requiredPlayerTag: Player2
+  requiredPlayerTag: Player1
   holdTime: 1.5
 --- !u!95 &2045744723
 Animator:
@@ -8298,7 +8299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Goal
   ShowTopMostFoldoutHeaderGroup: 1
   requiredPlayerId: 0
-  animator: {fileID: 0}
+  animator: {fileID: 2045744723}
 --- !u!114 &2045744727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8324,6 +8325,37 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
+--- !u!114 &2045744728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045744720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.Components.NetworkAnimator
+  ShowTopMostFoldoutHeaderGroup: 1
+  NetworkAnimatorExpanded: 0
+  AuthorityMode: 0
+  m_Animator: {fileID: 2045744723}
+  TransitionStateInfoList:
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 711609711
+    DestinationState: 1312050252
+    TransitionDuration: 0.25
+    TriggerNameHash: 2041033885
+    TransitionIndex: 0
+  AnimatorParameterEntries:
+    ParameterEntries:
+    - name: Raise
+      NameHash: 2041033885
+      Synchronize: 1
+      ParameterType: 9
+  AnimatorParametersExpanded: 0
 --- !u!1001 &5995513589235164735
 PrefabInstance:
   m_ObjectHideFlags: 0

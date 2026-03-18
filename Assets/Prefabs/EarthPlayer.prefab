@@ -234,7 +234,7 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   characterType: 1
   moveSpeed: 10
-  jumpForce: 19
+  jumpForce: 21
   rb: {fileID: 17919098210825363}
   fallGravityMultiplier: 3
   maxFallSpeed: -20
