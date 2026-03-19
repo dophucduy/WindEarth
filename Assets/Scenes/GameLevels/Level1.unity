@@ -8239,6 +8239,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1377615448329492636, guid: ab383e5fd8b6c6a4aa40c1d7521119cb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7165451152819046377, guid: ab383e5fd8b6c6a4aa40c1d7521119cb, type: 3}
       propertyPath: m_Name
       value: SawRolling
@@ -8484,7 +8488,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259895776}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7484010522688111281, guid: 3150ef8efa8a73a47b2b6138261e96f5, type: 2}
   m_audioClip: {fileID: 0}

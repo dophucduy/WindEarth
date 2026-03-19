@@ -1,6 +1,7 @@
+using Unity.Netcode;
 using UnityEngine;
 
-public class SceneMusic : MonoBehaviour
+public class SceneMusic : NetworkBehaviour
 {
     public AudioClip bgm;
     public GameObject audioManagerPrefab; 

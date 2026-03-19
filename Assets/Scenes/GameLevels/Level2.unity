@@ -1986,6 +1986,10 @@ PrefabInstance:
       propertyPath: maxDistance
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7502268417613309782, guid: a15342a5b431d3e4d9439050d52a43dc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9632,7 +9636,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855278750}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7484010522688111281, guid: 3150ef8efa8a73a47b2b6138261e96f5, type: 2}
   m_audioClip: {fileID: 0}
@@ -10212,7 +10216,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006145801}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7484010522688111281, guid: 3150ef8efa8a73a47b2b6138261e96f5, type: 2}
   m_audioClip: {fileID: 0}

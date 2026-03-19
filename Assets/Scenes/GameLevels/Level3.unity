@@ -187,6 +187,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FanSpinning
       objectReference: {fileID: 0}
+    - target: {fileID: 5050103590718289544, guid: a15342a5b431d3e4d9439050d52a43dc, type: 3}
+      propertyPath: direction.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5050103590718289544, guid: a15342a5b431d3e4d9439050d52a43dc, type: 3}
+      propertyPath: direction.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
